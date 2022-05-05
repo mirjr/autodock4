@@ -1,0 +1,21 @@
+REMARK  Name = PCA
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N   GLN A  1        5.743  16.392  65.138  0.00  0.00    -0.302 N 
+ATOM      2  H   GLN A  1        4.783  16.179  65.411  0.00  0.00    +0.150 HD
+ATOM      3  CD  GLN A  1        6.560  15.479  64.582  0.00  0.00    +0.214 C 
+ATOM      4  OE1 GLN A  1        6.229  14.302  64.322  0.00  0.00    -0.276 OA
+ATOM      5  CG  GLN A  1        7.916  16.106  64.240  0.00  0.00    +0.098 C 
+ATOM      6  CB  GLN A  1        7.960  17.321  65.137  0.00  0.00    +0.043 C 
+ATOM      7  CA  GLN A  1        6.478  17.652  65.256  0.00  0.00    +0.182 C 
+ENDROOT
+BRANCH   7   8
+ATOM      8  C   GLN A  1        6.105  18.626  64.148  0.00  0.00    +0.325 C 
+ATOM     11  O   GLN A  1        4.941  18.705  63.744  0.00  0.00    -0.249 OA
+BRANCH   8   9
+ATOM      9  OXT GLN A  1        7.091  19.379  63.666  0.00  0.00    -0.479 OA
+ATOM     10  HXT GLN A  1        7.856  19.477  64.219  0.00  0.00    +0.295 HD
+ENDBRANCH   8   9
+ENDBRANCH   7   8
+TORSDOF 2
