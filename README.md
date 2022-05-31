@@ -1,4 +1,1 @@
 ## Bioinformatics lessons
-> With Mirrione
-
-
