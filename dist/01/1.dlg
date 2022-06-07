@@ -1,0 +1,50 @@
+          AutoDock 4.2 Release 4.2.6   
+         (C) 1989-2012 The Scripps Research Institute
+        AutoDock comes with ABSOLUTELY NO WARRANTY.
+        AutoDock is free software, and you are welcome
+        to redistribute it under certain conditions;
+        for details type 'autodock4 -C'
+
+                     main.cc  $Revision: 1.213 $
+
+                   Compiled on Jul 18 2014 at 15:34:58
+
+
+This file was created at:			0:49 38" a.m., 04/06/2022
+                   on host:		"DEV"
+Current Working Directory = "D:\Documents\bioinformatics\autodock\01"
+
+      ________________________________________________________________
+
+                   SETTING UP DEFAULT PARAMETER LIBRARY
+      ________________________________________________________________
+
+
+Random number generator was seeded with values 5996, 1649188178.
+Docking parameter file (DPF) used for this docking:		D:/Documents/bioinformatics/autodock/01/1.dpf
+DPF> autodock_parameter_version 4.2       # used by autodock to validate parameter set
+
+	Autodock parameter version 4.2.
+DPF> outlev 1                             # diagnostic output level
+
+Output Level = 1  ADT-COMPATIBLE OUTPUT DURING DOCKING.
+DPF> intelec                              # calculate internal electrostatics
+
+Electrostatic energies will be calculated for all non-bonds between moving atoms.
+DPF> seed pid time                        # seeds for random generator
+
+Random number generator was seeded with values 5996, 1649188178.
+DPF> ligand_types A C NA OA N HD          # atoms types in ligand
+
+DPF> fld retseptor.maps.fld               # grid_data_file
+
+Opening Grid Map Dimensions file:		retseptor.maps.fld
+Grid Point Spacing =				0.000 Angstroms
+
+Even Number of User-specified Grid Points =	0 x-points
+						0 y-points
+						0 z-points
+
+D:/Documents/bioinformatics/autodock/01/autodock4.exe: FATAL ERROR: insufficient grid points.
+D:/Documents/bioinformatics/autodock/01/autodock4.exe: Unsuccessful Completion.
+
