@@ -1,0 +1,1840 @@
+          AutoDock 4.2 Release 4.2.6   
+         (C) 1989-2012 The Scripps Research Institute
+        AutoDock comes with ABSOLUTELY NO WARRANTY.
+        AutoDock is free software, and you are welcome
+        to redistribute it under certain conditions;
+        for details type 'autodock4 -C'
+
+                     main.cc  $Revision: 1.213 $
+
+                   Compiled on Jul 18 2014 at 15:34:58
+
+
+This file was created at:			8:17 20" p.m., 06/19/2022
+                   on host:		"ACER"
+Current Working Directory = "B:\Documents\github\bioinformatics\autodock4\data\task\a-glyukoza\03_cynoroside"
+
+      ________________________________________________________________
+
+                   SETTING UP DEFAULT PARAMETER LIBRARY
+      ________________________________________________________________
+
+
+Random number generator was seeded with values 9704, 1655651840.
+Docking parameter file (DPF) used for this docking:		B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dpf
+DPF> autodock_parameter_version 4.2       # used by autodock to validate parameter set
+
+	Autodock parameter version 4.2.
+DPF> outlev 1                             # diagnostic output level
+
+Output Level = 1  ADT-COMPATIBLE OUTPUT DURING DOCKING.
+DPF> intelec                              # calculate internal electrostatics
+
+Electrostatic energies will be calculated for all non-bonds between moving atoms.
+DPF> seed pid time                        # seeds for random generator
+
+Random number generator was seeded with values 9704, 1655651840.
+DPF> ligand_types A C HD OA               # atoms types in ligand
+
+DPF> fld receptor.maps.fld                # grid_data_file
+
+Opening Grid Map Dimensions file:		receptor.maps.fld
+Grid Point Spacing =				0.500 Angstroms
+
+Even Number of User-specified Grid Points =	40 x-points
+						40 y-points
+						40 z-points
+
+Coordinates of Central Grid Point of Maps =	(5.600, 19.642, 63.250)
+Macromolecule file used to create Grid Maps =	receptor.pdbqt
+Grid Parameter file used to create Grid Maps =	B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.gpf
+Minimum coordinates in grid = (-4.400, 9.642, 53.250)
+Maximum coordinates in grid = (15.600, 29.642, 73.250)
+
+DPF> map receptor.A.map                   # atom-specific affinity map
+
+DPF> map receptor.C.map                   # atom-specific affinity map
+
+DPF> map receptor.HD.map                  # atom-specific affinity map
+
+DPF> map receptor.OA.map                  # atom-specific affinity map
+
+DPF> elecmap receptor.e.map               # electrostatics map
+
+DPF> desolvmap receptor.d.map             # desolvation map
+
+DPF> move ligand.pdbqt                    # small molecule
+
+1,4-interactions will be _ignored_ in the non-bonded internal energy calculation.
+
+Ligand PDBQT file = "ligand.pdbqt"
+
+INPUT LIGAND PDBQT FILE:
+________________________
+
+INPUT-LIGAND-PDBQT: REMARK  Name = 5280637
+INPUT-LIGAND-PDBQT: REMARK                            x       y       z     vdW  Elec       q    Type
+INPUT-LIGAND-PDBQT: REMARK                         _______ _______ _______ _____ _____    ______ ____
+INPUT-LIGAND-PDBQT: ROOT
+INPUT-LIGAND-PDBQT: ATOM     13  C   LIG    1       -1.637   1.255   1.027  0.00  0.00    +0.131 A 
+INPUT-LIGAND-PDBQT: ATOM     14  C   LIG    1       -1.537   2.582   0.609  0.00  0.00    +0.092 A 
+INPUT-LIGAND-PDBQT: ATOM     15  C   LIG    1       -0.325   3.075   0.124  0.00  0.00    +0.135 A 
+INPUT-LIGAND-PDBQT: ATOM     16  C   LIG    1        0.786   2.231   0.060  0.00  0.00    +0.105 A 
+INPUT-LIGAND-PDBQT: ATOM     17  C   LIG    1        2.077   2.722  -0.445  0.00  0.00    +0.197 A 
+INPUT-LIGAND-PDBQT: ATOM     18  C   LIG    1        3.183   1.743  -0.470  0.00  0.00    +0.098 A 
+INPUT-LIGAND-PDBQT: ATOM     19  C   LIG    1        2.961   0.489  -0.046  0.00  0.00    +0.139 A 
+INPUT-LIGAND-PDBQT: ATOM     30  O   LIG    1        1.745   0.031   0.437  0.00  0.00    -0.454 OA
+INPUT-LIGAND-PDBQT: ATOM     31  O   LIG    1        2.235   3.874  -0.824  0.00  0.00    -0.287 OA
+INPUT-LIGAND-PDBQT: ATOM     32  C   LIG    1        0.687   0.904   0.477  0.00  0.00    +0.146 A 
+INPUT-LIGAND-PDBQT: ATOM     35  C   LIG    1       -0.525   0.414   0.962  0.00  0.00    +0.093 A 
+INPUT-LIGAND-PDBQT: ENDROOT
+INPUT-LIGAND-PDBQT: BRANCH  19  20
+INPUT-LIGAND-PDBQT: ATOM     20  C   LIG    1        4.031  -0.530  -0.040  0.00  0.00    +0.021 A 
+INPUT-LIGAND-PDBQT: ATOM     21  C   LIG    1        3.715  -1.879  -0.213  0.00  0.00    +0.015 A 
+INPUT-LIGAND-PDBQT: ATOM     22  C   LIG    1        4.725  -2.841  -0.206  0.00  0.00    +0.050 A 
+INPUT-LIGAND-PDBQT: ATOM     23  C   LIG    1        6.054  -2.456  -0.027  0.00  0.00    +0.158 A 
+INPUT-LIGAND-PDBQT: ATOM     24  C   LIG    1        6.372  -1.109   0.147  0.00  0.00    +0.159 A 
+INPUT-LIGAND-PDBQT: ATOM     29  C   LIG    1        5.362  -0.147   0.140  0.00  0.00    +0.060 A 
+INPUT-LIGAND-PDBQT: BRANCH  24  25
+INPUT-LIGAND-PDBQT: ATOM     25  O   LIG    1        7.667  -0.722   0.321  0.00  0.00    -0.503 OA
+INPUT-LIGAND-PDBQT: ATOM     26  H   LIG    1        8.229  -1.515   0.298  0.00  0.00    +0.292 HD
+INPUT-LIGAND-PDBQT: ENDBRANCH  24  25
+INPUT-LIGAND-PDBQT: BRANCH  23  27
+INPUT-LIGAND-PDBQT: ATOM     27  O   LIG    1        7.031  -3.405  -0.021  0.00  0.00    -0.503 OA
+INPUT-LIGAND-PDBQT: ATOM     28  H   LIG    1        6.625  -4.279  -0.154  0.00  0.00    +0.292 HD
+INPUT-LIGAND-PDBQT: ENDBRANCH  23  27
+INPUT-LIGAND-PDBQT: ENDBRANCH  19  20
+INPUT-LIGAND-PDBQT: BRANCH  15  33
+INPUT-LIGAND-PDBQT: ATOM     33  O   LIG    1       -0.279   4.378  -0.271  0.00  0.00    -0.506 OA
+INPUT-LIGAND-PDBQT: ATOM     34  H   LIG    1        0.607   4.606  -0.590  0.00  0.00    +0.292 HD
+INPUT-LIGAND-PDBQT: ENDBRANCH  15  33
+INPUT-LIGAND-PDBQT: BRANCH  13  12
+INPUT-LIGAND-PDBQT: ATOM     12  O   LIG    1       -2.824   0.778   1.501  0.00  0.00    -0.461 OA
+INPUT-LIGAND-PDBQT: BRANCH  12   2
+INPUT-LIGAND-PDBQT: ATOM      1  O   LIG    1       -3.633   0.054  -0.564  0.00  0.00    -0.331 OA
+INPUT-LIGAND-PDBQT: ATOM      2  C   LIG    1       -3.400  -0.318   0.792  0.00  0.00    +0.339 C 
+INPUT-LIGAND-PDBQT: ATOM      3  C   LIG    1       -4.715  -0.684   1.481  0.00  0.00    +0.214 C 
+INPUT-LIGAND-PDBQT: ATOM      4  C   LIG    1       -5.475  -1.754   0.696  0.00  0.00    +0.180 C 
+INPUT-LIGAND-PDBQT: ATOM      5  C   LIG    1       -5.564  -1.394  -0.787  0.00  0.00    +0.177 C 
+INPUT-LIGAND-PDBQT: ATOM     36  C   LIG    1       -4.188  -1.012  -1.337  0.00  0.00    +0.179 C 
+INPUT-LIGAND-PDBQT: BRANCH   5   6
+INPUT-LIGAND-PDBQT: ATOM      6  O   LIG    1       -6.069  -2.511  -1.514  0.00  0.00    -0.386 OA
+INPUT-LIGAND-PDBQT: ATOM      7  H   LIG    1       -5.441  -3.246  -1.409  0.00  0.00    +0.210 HD
+INPUT-LIGAND-PDBQT: ENDBRANCH   5   6
+INPUT-LIGAND-PDBQT: BRANCH   4   8
+INPUT-LIGAND-PDBQT: ATOM      8  O   LIG    1       -6.805  -1.863   1.206  0.00  0.00    -0.386 OA
+INPUT-LIGAND-PDBQT: ATOM      9  H   LIG    1       -7.264  -2.539   0.678  0.00  0.00    +0.210 HD
+INPUT-LIGAND-PDBQT: ENDBRANCH   4   8
+INPUT-LIGAND-PDBQT: BRANCH   3  10
+INPUT-LIGAND-PDBQT: ATOM     10  O   LIG    1       -4.415  -1.178   2.786  0.00  0.00    -0.383 OA
+INPUT-LIGAND-PDBQT: ATOM     11  H   LIG    1       -3.859  -1.970   2.688  0.00  0.00    +0.210 HD
+INPUT-LIGAND-PDBQT: ENDBRANCH   3  10
+INPUT-LIGAND-PDBQT: BRANCH  36  37
+INPUT-LIGAND-PDBQT: ATOM     37  C   LIG    1       -4.271  -0.536  -2.784  0.00  0.00    +0.190 C 
+INPUT-LIGAND-PDBQT: BRANCH  37  38
+INPUT-LIGAND-PDBQT: ATOM     38  O   LIG    1       -2.969  -0.191  -3.220  0.00  0.00    -0.392 OA
+INPUT-LIGAND-PDBQT: ATOM     39  H   LIG    1       -2.629   0.496  -2.621  0.00  0.00    +0.210 HD
+INPUT-LIGAND-PDBQT: ENDBRANCH  37  38
+INPUT-LIGAND-PDBQT: ENDBRANCH  36  37
+INPUT-LIGAND-PDBQT: ENDBRANCH  12   2
+INPUT-LIGAND-PDBQT: ENDBRANCH  13  12
+INPUT-LIGAND-PDBQT: TORSDOF 11
+________________________________________________________________________________
+
+Total charge on ligand                               =	+0.002 e
+REMARK  Name = 5280637
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+
+
+Number of Rotatable Bonds in Small Molecule =	11 torsions
+Number of atoms in ligand:  39
+
+Number of non-hydrogen atoms in ligand:  32
+
+Number of vibrational degrees of freedom of ligand:  111
+
+
+Number of torsional degrees of freedom = 11
+Estimated loss of torsional free energy upon binding = +3.2813 kcal/mol
+
+
+DPF> about -0.096 -0.217 -0.029            # small molecule center
+
+Small molecule center of rotation =	(-0.096, -0.217, -0.029)
+
+DPF> tran0 random                         # initial coordinates/A or random
+
+Initial translation =			(10.504, 29.376, 61.246) Angstroms
+DPF> quaternion0 random                   # initial orientation
+
+Each run will begin with a new, random initial orientation.
+Initial quaternion,  (x,y,z,w) =	( 0.541, -0.268, 0.701, -0.380 ),
+DPF> dihe0 random                         # initial dihedrals (relative) or random
+
+DPF> torsdof 11                            # torsional degrees of freedom
+
+Number of torsional degrees of freedom = 11
+Free energy coefficient for torsional degrees of freedom = 0.2983, the factory default value.
+
+Estimated loss of torsional free energy upon binding = +3.2813 kcal/mol
+
+DPF> rmstol 2.0                           # cluster_tolerance/A
+
+Maximum RMS tolerance for conformational cluster analysis = 2.00 Angstroms
+DPF> extnrg 1000.0                        # external grid energy
+
+External grid energy (beyond grid map walls) = 1000.00
+
+DPF> e0max 0.0 10000                      # max initial energy; max number of retries
+
+Using user-specified maximum number of retries for simanneal initialization, 10000 retries.
+If the simanneal initial energy is greater than e0max, 0.000,
+then a new, random initial state will be created.
+
+DPF> ga_pop_size 150                      # number of individuals in population
+
+A population of 150 individuals will be used
+DPF> ga_num_evals 2500000                 # maximum number of energy evaluations
+
+There will be at most 2500000 function evaluations used.
+DPF> ga_num_generations 27000             # maximum number of generations
+
+The GA will run for at most 27000 generations.
+DPF> ga_elitism 1                         # number of top individuals to survive to next generation
+
+The 1 best will be preserved each GA generation.
+DPF> ga_mutation_rate 0.02                # rate of gene mutation
+
+The mutation rate is 0.020000.
+DPF> ga_crossover_rate 0.8                # rate of crossover
+
+The crossover rate is 0.800000.
+DPF> ga_window_size 10                    # 
+
+The GA's selection window is 10 generations.
+DPF> ga_cauchy_alpha 0.0                  # Alpha parameter of Cauchy distribution
+
+The alpha parameter (for the Cauchy distribution) is being set to 0.000000.
+DPF> ga_cauchy_beta 1.0                   # Beta parameter Cauchy distribution
+
+The beta parameter (for the Cauchy distribution) is being set to 1.000000.
+DPF> set_ga                               # set the above parameters for GA or LGA
+
+DPF> sw_max_its 300                       # iterations of Solis & Wets local search
+
+Solis & Wets algorithms will perform at most 300 iterations.
+DPF> sw_max_succ 4                        # consecutive successes before changing rho
+
+Solis & Wets algorithms expand rho every 4 in a row successes.
+DPF> sw_max_fail 4                        # consecutive failures before changing rho
+
+Solis & Wets algorithms contract rho every 4 in a row failures.
+DPF> sw_rho 1.0                           # size of local search space to sample
+
+rho is set to 1.000000.
+DPF> sw_lb_rho 0.01                       # lower bound on rho
+
+rho will never get smaller than 0.010000.
+DPF> ls_search_freq 0.06                  # probability of performing local search on individual
+
+Local search will be performed with frequency 0.060000.
+DPF> set_psw1                             # set the above pseudo-Solis & Wets parameters
+
+Creating a new Local Search object using the pseudo-Solis-Wets algorithm (pSW1) with the current settings.
+
+DPF> unbound_model bound                  # state of unbound ligand
+
+DPF> ga_run 10                            # do this many hybrid GA-LS runs
+
+centering ligand on specified point: -0.096 -0.217 -0.029
+Furthest true ligand atom from "about" center is 8.432 Angstroms (maxrad).
+Number of requested GA dockings = 10 runs
+Unbound model to be used is 'same as bound' [AutoDock 4.2 default].
+
+	BEGINNING GENETIC ALGORITHM DOCKING 1 of 10
+Run: 1 Seed: 995516473 899508738 [ Run 1 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -12.091
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 6.690 16.948 67.386 quatxyzw -0.105998 -0.899421 0.235145 -0.352865 center -0.096 -0.217 -0.029 ntor 11 -3.9195 171.3740 45.5551 -55.2123 -24.9368 87.4497 -11.2893 166.2400 51.0767 123.4708 -8.5344
+State:	  6.690  16.948  67.386  -0.113 -0.961  0.251 -138.675     -3.92  171.37   45.56  -55.21  -24.94   87.45  -11.29  166.24   51.08  123.47   -8.53
+
+DOCKED: MODEL        1
+DOCKED: USER    Run = 1
+DOCKED: USER    DPF = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.12 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  957.49 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -7.40 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -6.92 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.48 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -4.69 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -4.69 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move ligand.pdbqt
+DOCKED: USER    NEWDPF about -0.096000 -0.217000 -0.029000
+DOCKED: USER    NEWDPF tran0 6.689855 16.947587 67.386218
+DOCKED: USER    NEWDPF quaternion0 -0.105998 -0.899421 0.235145 -0.352865
+DOCKED: USER    NEWDPF axisangle0 -0.113285 -0.961254 0.251311 -138.674740
+DOCKED: USER    NEWDPF quat0 -0.113285 -0.961254 0.251311 -138.674740
+DOCKED: USER    NEWDPF dihe0 -3.92 171.37 45.56 -55.21 -24.94 87.45 -11.29 166.24 51.08 123.47 -8.53 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = 5280637
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   LIG    1        7.126  17.306  65.076 -0.32 +0.22    +0.131 A 
+DOCKED: ATOM      2  C   LIG    1        7.372  18.638  64.741 -0.37 +0.16    +0.092 A 
+DOCKED: ATOM      3  C   LIG    1        6.833  19.667  65.516 -0.32 +0.30    +0.135 A 
+DOCKED: ATOM      4  C   LIG    1        6.047  19.353  66.627 -0.28 +0.23    +0.105 A 
+DOCKED: ATOM      5  C   LIG    1        5.464  20.415  67.461 -0.19 +0.44    +0.197 A 
+DOCKED: ATOM      6  C   LIG    1        4.651  19.970  68.611 -0.16 +0.17    +0.098 A 
+DOCKED: ATOM      7  C   LIG    1        4.492  18.656  68.834 -0.11 +0.22    +0.139 A 
+DOCKED: ATOM      8  O   LIG    1        5.036  17.657  68.041 -0.04 -0.77    -0.454 OA
+DOCKED: ATOM      9  O   LIG    1        5.637  21.602  67.222 -0.32 -0.71    -0.287 OA
+DOCKED: ATOM     10  C   LIG    1        5.801  18.022  66.962 -0.18 +0.27    +0.146 A 
+DOCKED: ATOM     11  C   LIG    1        6.340  16.997  66.187 -0.22 +0.17    +0.093 A 
+DOCKED: ENDROOT
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     12  C   LIG    1        3.683  18.152  69.963 -0.07 +0.03    +0.021 A 
+DOCKED: ATOM     13  C   LIG    1        4.307  17.737  71.141 -0.06 +0.02    +0.015 A 
+DOCKED: ATOM     14  C   LIG    1        3.543  17.260  72.207 -0.02 +0.05    +0.050 A 
+DOCKED: ATOM     15  C   LIG    1        2.154  17.198  72.097 -0.01 +0.16    +0.158 A 
+DOCKED: ATOM     16  C   LIG    1        1.529  17.611  70.920 -0.01 +0.18    +0.159 A 
+DOCKED: ATOM     17  C   LIG    1        2.292  18.088  69.855 -0.06 +0.08    +0.060 A 
+DOCKED: BRANCH  24  25
+DOCKED: ATOM     18  O   LIG    1        0.172  17.555  70.803 +0.01 -0.57    -0.503 OA
+DOCKED: ATOM     19  H   LIG    1       -0.188  17.144  71.607 +0.01 +0.29    +0.292 HD
+DOCKED: ENDBRANCH  24  25
+DOCKED: BRANCH  23  27
+DOCKED: ATOM     20  O   LIG    1        1.419  16.729  73.144 +0.00 -0.45    -0.503 OA
+DOCKED: ATOM     21  H   LIG    1        0.476  16.877  72.961 +0.00 +0.26    +0.292 HD
+DOCKED: ENDBRANCH  23  27
+DOCKED: ENDBRANCH  19  20
+DOCKED: BRANCH  15  33
+DOCKED: ATOM     22  O   LIG    1        7.102  20.950  65.147 -0.44 -1.21    -0.506 OA
+DOCKED: ATOM     23  H   LIG    1        7.358  21.479  65.917 +0.21 +0.61    +0.292 HD
+DOCKED: ENDBRANCH  15  33
+DOCKED: BRANCH  13  12
+DOCKED: ATOM     24  O   LIG    1        7.654  16.305  64.316 -0.16 -0.70    -0.461 OA
+DOCKED: BRANCH  12   2
+DOCKED: ATOM     25  O   LIG    1        8.131  14.800  66.033 -0.22 -0.60    -0.331 OA
+DOCKED: ATOM     26  C   LIG    1        8.673  15.511  64.924 -0.26 +0.51    +0.339 C 
+DOCKED: ATOM     27  C   LIG    1        9.789  16.451  65.382 -0.47 +0.28    +0.214 C 
+DOCKED: ATOM     28  C   LIG    1       10.855  15.700  66.181 -0.52 +0.22    +0.180 C 
+DOCKED: ATOM     29  C   LIG    1       10.222  14.821  67.260 -0.37 +0.28    +0.177 C 
+DOCKED: ATOM     30  C   LIG    1        9.098  13.964  66.673 -0.38 +0.26    +0.179 C 
+DOCKED: BRANCH   5   6
+DOCKED: ATOM     31  O   LIG    1       11.219  13.972  67.821 -0.32 -0.44    -0.386 OA
+DOCKED: ATOM     32  H   LIG    1       10.970  13.051  67.631 -0.35 +0.14    +0.210 HD
+DOCKED: ENDBRANCH   5   6
+DOCKED: BRANCH   4   8
+DOCKED: ATOM     33  O   LIG    1       11.717  16.639  66.824 -0.16 -0.48    -0.386 OA
+DOCKED: ATOM     34  H   LIG    1       12.090  16.201  67.609 +0.16 +0.26    +0.210 HD
+DOCKED: ENDBRANCH   4   8
+DOCKED: BRANCH   3  10
+DOCKED: ATOM     35  O   LIG    1       10.387  17.034  64.225 -0.33 -0.45    -0.383 OA
+DOCKED: ATOM     36  H   LIG    1        9.722  17.047  63.516 +0.17 +0.25    +0.210 HD
+DOCKED: ENDBRANCH   3  10
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   LIG    1        8.374  13.166  67.753 -0.31 +0.29    +0.190 C 
+DOCKED: BRANCH  37  38
+DOCKED: ATOM     38  O   LIG    1        9.155  13.195  68.933 -0.55 -0.71    -0.392 OA
+DOCKED: ATOM     39  H   LIG    1        9.955  12.665  68.772 +0.09 +0.26    +0.210 HD
+DOCKED: ENDBRANCH  37  38
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  12   2
+DOCKED: ENDBRANCH  13  12
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 2 of 10
+Run: 2 Seed: 1600299566 2118880331 [ Run 2 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -11.520
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 3.004 21.357 66.954 quatxyzw 0.294491 -0.071184 -0.414612 -0.858082 center -0.096 -0.217 -0.029 ntor 11 -3.9128 -170.6605 -9.0413 -157.3479 -24.6890 48.1899 -21.8377 -180.0000 137.7653 -105.5265 -62.7134
+State:	  3.004  21.357  66.954   0.573 -0.139 -0.807 -61.796     -3.91 -170.66   -9.04 -157.35  -24.69   48.19  -21.84 -180.00  137.77 -105.53  -62.71
+
+DOCKED: MODEL        2
+DOCKED: USER    Run = 2
+DOCKED: USER    DPF = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -3.87 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =    1.46 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -7.15 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -6.63 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.52 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -4.37 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -4.37 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move ligand.pdbqt
+DOCKED: USER    NEWDPF about -0.096000 -0.217000 -0.029000
+DOCKED: USER    NEWDPF tran0 3.004498 21.356512 66.954378
+DOCKED: USER    NEWDPF quaternion0 0.294491 -0.071184 -0.414612 -0.858082
+DOCKED: USER    NEWDPF axisangle0 0.573484 -0.138621 -0.807404 -61.796239
+DOCKED: USER    NEWDPF quat0 0.573484 -0.138621 -0.807404 -61.796239
+DOCKED: USER    NEWDPF dihe0 -3.91 -170.66 -9.04 -157.35 -24.69 48.19 -21.84 -180.00 137.77 -105.53 -62.71 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = 5280637
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   LIG    1        2.608  22.757  68.835 -0.15 +0.19    +0.131 A 
+DOCKED: ATOM      2  C   LIG    1        3.714  23.509  69.231 +0.03 +0.12    +0.092 A 
+DOCKED: ATOM      3  C   LIG    1        5.005  23.050  68.965 -0.12 +0.21    +0.135 A 
+DOCKED: ATOM      4  C   LIG    1        5.181  21.834  68.301 -0.26 +0.19    +0.105 A 
+DOCKED: ATOM      5  C   LIG    1        6.529  21.324  68.008 -0.26 +0.35    +0.197 A 
+DOCKED: ATOM      6  C   LIG    1        6.597  20.029  67.300 -0.22 +0.19    +0.098 A 
+DOCKED: ATOM      7  C   LIG    1        5.458  19.402  66.966 -0.21 +0.32    +0.139 A 
+DOCKED: ATOM      8  O   LIG    1        4.189  19.881  67.250 -0.54 -1.16    -0.454 OA
+DOCKED: ATOM      9  O   LIG    1        7.541  21.930  68.330 -0.44 -0.44    -0.287 OA
+DOCKED: ATOM     10  C   LIG    1        4.076  21.082  67.905 -0.21 +0.32    +0.146 A 
+DOCKED: ATOM     11  C   LIG    1        2.787  21.542  68.172 -0.19 +0.18    +0.093 A 
+DOCKED: ENDROOT
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     12  C   LIG    1        5.465  18.101  66.265 -0.31 +0.04    +0.021 A 
+DOCKED: ATOM     13  C   LIG    1        6.648  17.611  65.708 -0.34 +0.03    +0.015 A 
+DOCKED: ATOM     14  C   LIG    1        6.654  16.384  65.045 -0.34 +0.09    +0.050 A 
+DOCKED: ATOM     15  C   LIG    1        5.477  15.642  64.939 -0.29 +0.32    +0.158 A 
+DOCKED: ATOM     16  C   LIG    1        4.294  16.130  65.494 -0.30 +0.30    +0.159 A 
+DOCKED: ATOM     17  C   LIG    1        4.288  17.357  66.157 -0.24 +0.12    +0.060 A 
+DOCKED: BRANCH  24  25
+DOCKED: ATOM     18  O   LIG    1        3.139  15.413  65.398 -0.14 -0.78    -0.503 OA
+DOCKED: ATOM     19  H   LIG    1        3.313  14.624  64.857 -0.22 +0.41    +0.292 HD
+DOCKED: ENDBRANCH  24  25
+DOCKED: BRANCH  23  27
+DOCKED: ATOM     20  O   LIG    1        5.496  14.446  64.288 -0.46 -1.30    -0.503 OA
+DOCKED: ATOM     21  H   LIG    1        4.582  14.133  64.173 -0.38 +0.65    +0.292 HD
+DOCKED: ENDBRANCH  23  27
+DOCKED: ENDBRANCH  19  20
+DOCKED: BRANCH  15  33
+DOCKED: ATOM     22  O   LIG    1        6.052  23.821  69.373 -0.07 -0.74    -0.506 OA
+DOCKED: ATOM     23  H   LIG    1        6.888  23.345  69.262 +0.16 +0.40    +0.292 HD
+DOCKED: ENDBRANCH  15  33
+DOCKED: BRANCH  13  12
+DOCKED: ATOM     24  O   LIG    1        1.348  23.209  69.098 -0.02 -0.62    -0.461 OA
+DOCKED: BRANCH  12   2
+DOCKED: ATOM     25  O   LIG    1       -0.170  24.977  69.216 -0.01 -0.36    -0.331 OA
+DOCKED: ATOM     26  C   LIG    1        1.011  24.495  68.580 -0.05 +0.40    +0.339 C 
+DOCKED: ATOM     27  C   LIG    1        0.788  24.352  67.074 -0.18 +0.31    +0.214 C 
+DOCKED: ATOM     28  C   LIG    1        0.275  25.655  66.461 -0.17 +0.22    +0.180 C 
+DOCKED: ATOM     29  C   LIG    1       -0.892  26.225  67.267 -0.04 +0.19    +0.177 C 
+DOCKED: ATOM     30  C   LIG    1       -0.548  26.277  68.758 -0.02 +0.18    +0.179 C 
+DOCKED: BRANCH   5   6
+DOCKED: ATOM     31  O   LIG    1       -1.186  27.541  66.805 +0.00 -0.39    -0.386 OA
+DOCKED: ATOM     32  H   LIG    1       -2.153  27.647  66.800 +0.03 +0.21    +0.210 HD
+DOCKED: ENDBRANCH   5   6
+DOCKED: BRANCH   4   8
+DOCKED: ATOM     33  O   LIG    1       -0.184  25.407  65.131 -0.17 -0.54    -0.386 OA
+DOCKED: ATOM     34  H   LIG    1       -0.847  26.087  64.921 +0.09 +0.26    +0.210 HD
+DOCKED: ENDBRANCH   4   8
+DOCKED: BRANCH   3  10
+DOCKED: ATOM     35  O   LIG    1        2.032  24.001  66.469 -0.09 -0.66    -0.383 OA
+DOCKED: ATOM     36  H   LIG    1        2.737  24.139  67.125 -0.52 +0.25    +0.210 HD
+DOCKED: ENDBRANCH   3  10
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   LIG    1       -1.739  26.731  69.596 +0.00 +0.18    +0.190 C 
+DOCKED: BRANCH  37  38
+DOCKED: ATOM     38  O   LIG    1       -2.829  26.987  68.728 +0.00 -0.36    -0.392 OA
+DOCKED: ATOM     39  H   LIG    1       -2.692  27.865  68.333 +0.01 +0.19    +0.210 HD
+DOCKED: ENDBRANCH  37  38
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  12   2
+DOCKED: ENDBRANCH  13  12
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 3 of 10
+Run: 3 Seed: 858543871 694404806 [ Run 3 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -11.823
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 5.953 16.183 66.770 quatxyzw -0.118003 -0.966648 0.098587 -0.204813 center -0.096 -0.217 -0.029 ntor 11 -1.1489 175.7935 44.1634 -51.8711 -24.2366 87.3321 -15.2802 160.1722 -22.9505 107.8921 -22.7335
+State:	  5.953  16.183  66.770  -0.121 -0.988  0.101 -156.363     -1.15  175.79   44.16  -51.87  -24.24   87.33  -15.28  160.17  -22.95  107.89  -22.73
+
+DOCKED: MODEL        3
+DOCKED: USER    Run = 3
+DOCKED: USER    DPF = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -3.84 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =    1.53 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -7.12 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -6.72 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.40 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -4.70 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -4.70 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move ligand.pdbqt
+DOCKED: USER    NEWDPF about -0.096000 -0.217000 -0.029000
+DOCKED: USER    NEWDPF tran0 5.952705 16.182598 66.770111
+DOCKED: USER    NEWDPF quaternion0 -0.118003 -0.966648 0.098587 -0.204813
+DOCKED: USER    NEWDPF axisangle0 -0.120559 -0.987583 0.100722 -156.362872
+DOCKED: USER    NEWDPF quat0 -0.120559 -0.987583 0.100722 -156.362872
+DOCKED: USER    NEWDPF dihe0 -1.15 175.79 44.16 -51.87 -24.24 87.33 -15.28 160.17 -22.95 107.89 -22.73 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = 5280637
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   LIG    1        7.155  17.021  64.897 -0.32 +0.21    +0.131 A 
+DOCKED: ATOM      2  C   LIG    1        7.491  18.372  64.992 -0.39 +0.15    +0.092 A 
+DOCKED: ATOM      3  C   LIG    1        6.710  19.236  65.761 -0.34 +0.28    +0.135 A 
+DOCKED: ATOM      4  C   LIG    1        5.592  18.739  66.434 -0.27 +0.23    +0.105 A 
+DOCKED: ATOM      5  C   LIG    1        4.749  19.625  67.251 -0.16 +0.47    +0.197 A 
+DOCKED: ATOM      6  C   LIG    1        3.593  18.993  67.919 -0.10 +0.19    +0.098 A 
+DOCKED: ATOM      7  C   LIG    1        3.377  17.678  67.756 -0.06 +0.24    +0.139 A 
+DOCKED: ATOM      8  O   LIG    1        4.169  16.847  66.979 -0.06 -0.81    -0.454 OA
+DOCKED: ATOM      9  O   LIG    1        4.984  20.819  67.374 -0.32 -0.72    -0.287 OA
+DOCKED: ATOM     10  C   LIG    1        5.256  17.389  66.340 -0.21 +0.28    +0.146 A 
+DOCKED: ATOM     11  C   LIG    1        6.037  16.528  65.571 -0.27 +0.17    +0.093 A 
+DOCKED: ENDROOT
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     12  C   LIG    1        2.233  16.994  68.393 -0.09 +0.03    +0.021 A 
+DOCKED: ATOM     13  C   LIG    1        2.121  15.604  68.324 -0.10 +0.02    +0.015 A 
+DOCKED: ATOM     14  C   LIG    1        1.040  14.958  68.924 -0.04 +0.06    +0.050 A 
+DOCKED: ATOM     15  C   LIG    1        0.069  15.701  69.596 -0.01 +0.18    +0.158 A 
+DOCKED: ATOM     16  C   LIG    1        0.178  17.090  69.665 -0.03 +0.20    +0.159 A 
+DOCKED: ATOM     17  C   LIG    1        1.259  17.736  69.065 -0.07 +0.09    +0.060 A 
+DOCKED: BRANCH  24  25
+DOCKED: ATOM     18  O   LIG    1       -0.764  17.825  70.321 +0.01 -0.60    -0.503 OA
+DOCKED: ATOM     19  H   LIG    1       -1.445  17.219  70.657 +0.02 +0.32    +0.292 HD
+DOCKED: ENDBRANCH  24  25
+DOCKED: BRANCH  23  27
+DOCKED: ATOM     20  O   LIG    1       -0.983  15.059  70.177 +0.01 -0.51    -0.503 OA
+DOCKED: ATOM     21  H   LIG    1       -1.526  15.709  70.655 +0.01 +0.29    +0.292 HD
+DOCKED: ENDBRANCH  23  27
+DOCKED: ENDBRANCH  19  20
+DOCKED: BRANCH  15  33
+DOCKED: ATOM     22  O   LIG    1        7.079  20.546  65.821 -0.21 -1.09    -0.506 OA
+DOCKED: ATOM     23  H   LIG    1        7.029  20.872  66.732 +0.21 +0.58    +0.292 HD
+DOCKED: ENDBRANCH  15  33
+DOCKED: BRANCH  13  12
+DOCKED: ATOM     24  O   LIG    1        7.921  16.180  64.144 -0.18 -0.68    -0.461 OA
+DOCKED: BRANCH  12   2
+DOCKED: ATOM     25  O   LIG    1        8.309  14.791  65.977 -0.23 -0.58    -0.331 OA
+DOCKED: ATOM     26  C   LIG    1        8.902  15.414  64.841 -0.22 +0.49    +0.339 C 
+DOCKED: ATOM     27  C   LIG    1       10.020  16.364  65.273 -0.49 +0.27    +0.214 C 
+DOCKED: ATOM     28  C   LIG    1       11.043  15.652  66.159 -0.52 +0.21    +0.180 C 
+DOCKED: ATOM     29  C   LIG    1       10.356  14.862  67.273 -0.37 +0.27    +0.177 C 
+DOCKED: ATOM     30  C   LIG    1        9.237  13.985  66.707 -0.31 +0.26    +0.179 C 
+DOCKED: BRANCH   5   6
+DOCKED: ATOM     31  O   LIG    1       11.317  14.036  67.927 -0.36 -0.46    -0.386 OA
+DOCKED: ATOM     32  H   LIG    1       11.087  13.108  67.747 -0.39 +0.16    +0.210 HD
+DOCKED: ENDBRANCH   5   6
+DOCKED: BRANCH   4   8
+DOCKED: ATOM     33  O   LIG    1       11.901  16.619  66.766 -0.11 -0.46    -0.386 OA
+DOCKED: ATOM     34  H   LIG    1       12.247  16.226  67.586 +0.15 +0.24    +0.210 HD
+DOCKED: ENDBRANCH   4   8
+DOCKED: BRANCH   3  10
+DOCKED: ATOM     35  O   LIG    1       10.669  16.855  64.101 -0.32 -0.45    -0.383 OA
+DOCKED: ATOM     36  H   LIG    1       10.030  16.828  63.368 +0.17 +0.25    +0.210 HD
+DOCKED: ENDBRANCH   3  10
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   LIG    1        8.460  13.277  67.813 -0.31 +0.30    +0.190 C 
+DOCKED: BRANCH  37  38
+DOCKED: ATOM     38  O   LIG    1        9.262  13.251  68.980 -0.54 -0.75    -0.392 OA
+DOCKED: ATOM     39  H   LIG    1        9.969  12.599  68.838 +0.09 +0.25    +0.210 HD
+DOCKED: ENDBRANCH  37  38
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  12   2
+DOCKED: ENDBRANCH  13  12
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 4 of 10
+Run: 4 Seed: 1365156744 706545766 [ Run 4 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -13.149
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 5.374 16.402 68.057 quatxyzw 0.511773 -0.245372 0.256409 0.782391 center -0.096 -0.217 -0.029 ntor 11 3.5823 -174.2359 10.1936 -151.2623 -19.8941 87.3666 -8.5905 -39.5592 -140.6465 83.5122 161.7863
+State:	  5.374  16.402  68.057   0.822 -0.394  0.412 77.040      3.58 -174.24   10.19 -151.26  -19.89   87.37   -8.59  -39.56 -140.65   83.51  161.79
+
+DOCKED: MODEL        4
+DOCKED: USER    Run = 4
+DOCKED: USER    DPF = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.42 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  107.24 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -8.70 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -8.40 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.30 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -4.45 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -4.45 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move ligand.pdbqt
+DOCKED: USER    NEWDPF about -0.096000 -0.217000 -0.029000
+DOCKED: USER    NEWDPF tran0 5.373953 16.402361 68.057445
+DOCKED: USER    NEWDPF quaternion0 0.511773 -0.245372 0.256409 0.782391
+DOCKED: USER    NEWDPF axisangle0 0.821745 -0.393990 0.411711 77.040016
+DOCKED: USER    NEWDPF quat0 0.821745 -0.393990 0.411711 77.040016
+DOCKED: USER    NEWDPF dihe0 3.58 -174.24 10.19 -151.26 -19.89 87.37 -8.59 -39.56 -140.65 83.51 161.79 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = 5280637
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   LIG    1        5.125  18.628  67.256 -0.20 +0.26    +0.131 A 
+DOCKED: ATOM      2  C   LIG    1        5.128  18.738  65.866 -0.18 +0.24    +0.092 A 
+DOCKED: ATOM      3  C   LIG    1        5.796  17.790  65.089 -0.33 +0.27    +0.135 A 
+DOCKED: ATOM      4  C   LIG    1        6.459  16.731  65.714 -0.25 +0.19    +0.105 A 
+DOCKED: ATOM      5  C   LIG    1        7.172  15.717  64.922 -0.28 +0.35    +0.197 A 
+DOCKED: ATOM      6  C   LIG    1        7.836  14.641  65.686 -0.35 +0.20    +0.098 A 
+DOCKED: ATOM      7  C   LIG    1        7.756  14.640  67.026 -0.24 +0.28    +0.139 A 
+DOCKED: ATOM      8  O   LIG    1        7.090  15.601  67.770 +0.06 -0.90    -0.454 OA
+DOCKED: ATOM      9  O   LIG    1        7.218  15.755  63.700 -0.23 -0.43    -0.287 OA
+DOCKED: ATOM     10  C   LIG    1        6.455  16.619  67.104 -0.03 +0.26    +0.146 A 
+DOCKED: ATOM     11  C   LIG    1        5.788  17.569  67.877 -0.00 +0.16    +0.093 A 
+DOCKED: ENDROOT
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     12  C   LIG    1        8.407  13.595  67.842 -0.34 +0.04    +0.021 A 
+DOCKED: ATOM     13  C   LIG    1        9.800  13.542  67.932 -0.34 +0.02    +0.015 A 
+DOCKED: ATOM     14  C   LIG    1       10.415  12.554  68.702 -0.35 +0.05    +0.050 A 
+DOCKED: ATOM     15  C   LIG    1        9.638  11.618  69.384 -0.21 +0.11    +0.158 A 
+DOCKED: ATOM     16  C   LIG    1        8.247  11.668  69.295 -0.11 +0.11    +0.159 A 
+DOCKED: ATOM     17  C   LIG    1        7.632  12.655  68.526 -0.22 +0.08    +0.060 A 
+DOCKED: BRANCH  24  25
+DOCKED: ATOM     18  O   LIG    1        7.479  10.758  69.959 -0.04 -0.26    -0.503 OA
+DOCKED: ATOM     19  H   LIG    1        8.066  10.188  70.485 +0.06 +0.13    +0.292 HD
+DOCKED: ENDBRANCH  24  25
+DOCKED: BRANCH  23  27
+DOCKED: ATOM     20  O   LIG    1       10.251  10.658  70.132 -0.11 -0.27    -0.503 OA
+DOCKED: ATOM     21  H   LIG    1        9.579  10.036  70.462 +0.07 +0.13    +0.292 HD
+DOCKED: ENDBRANCH  23  27
+DOCKED: ENDBRANCH  19  20
+DOCKED: BRANCH  15  33
+DOCKED: ATOM     22  O   LIG    1        5.770  17.942  63.736 -0.23 -1.00    -0.506 OA
+DOCKED: ATOM     23  H   LIG    1        6.119  17.152  63.297 -0.34 +0.39    +0.292 HD
+DOCKED: ENDBRANCH  15  33
+DOCKED: BRANCH  13  12
+DOCKED: ATOM     24  O   LIG    1        4.471  19.558  68.011 -0.11 -0.90    -0.461 OA
+DOCKED: BRANCH  12   2
+DOCKED: ATOM     25  O   LIG    1        6.060  21.028  67.142 -0.25 -0.76    -0.331 OA
+DOCKED: ATOM     26  C   LIG    1        5.137  20.805  68.204 -0.15 +0.65    +0.339 C 
+DOCKED: ATOM     27  C   LIG    1        5.869  20.744  69.546 -0.15 +0.31    +0.214 C 
+DOCKED: ATOM     28  C   LIG    1        6.734  21.986  69.764 -0.24 +0.24    +0.180 C 
+DOCKED: ATOM     29  C   LIG    1        7.594  22.285  68.537 -0.29 +0.26    +0.177 C 
+DOCKED: ATOM     30  C   LIG    1        6.745  22.277  67.263 -0.47 +0.36    +0.179 C 
+DOCKED: BRANCH   5   6
+DOCKED: ATOM     31  O   LIG    1        8.204  23.564  68.688 -0.81 -0.49    -0.386 OA
+DOCKED: ATOM     32  H   LIG    1        9.076  23.533  68.258 -0.33 +0.23    +0.210 HD
+DOCKED: ENDBRANCH   5   6
+DOCKED: BRANCH   4   8
+DOCKED: ATOM     33  O   LIG    1        7.607  21.768  70.874 -0.23 -0.42    -0.386 OA
+DOCKED: ATOM     34  H   LIG    1        8.345  22.395  70.790 +0.03 +0.24    +0.210 HD
+DOCKED: ENDBRANCH   4   8
+DOCKED: BRANCH   3  10
+DOCKED: ATOM     35  O   LIG    1        4.894  20.657  70.584 -0.02 -0.48    -0.383 OA
+DOCKED: ATOM     36  H   LIG    1        4.094  20.245  70.214 +0.05 +0.28    +0.210 HD
+DOCKED: ENDBRANCH   3  10
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   LIG    1        7.600  22.456  66.013 -0.42 +0.36    +0.190 C 
+DOCKED: BRANCH  37  38
+DOCKED: ATOM     38  O   LIG    1        7.105  21.599  65.001 -0.79 -1.03    -0.392 OA
+DOCKED: ATOM     39  H   LIG    1        7.260  20.682  65.288 -0.01 +0.45    +0.210 HD
+DOCKED: ENDBRANCH  37  38
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  12   2
+DOCKED: ENDBRANCH  13  12
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 5 of 10
+Run: 5 Seed: 71706160 312930524 [ Run 5 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -12.872
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 5.556 16.122 66.819 quatxyzw 0.350641 0.002339 0.312053 0.882988 center -0.096 -0.217 -0.029 ntor 11 23.9163 -179.8426 -44.1463 -163.3598 -40.4886 88.7808 -22.2889 173.2877 3.7085 89.1848 160.7502
+State:	  5.556  16.122  66.819   0.747  0.005  0.665 55.990     23.92 -179.84  -44.15 -163.36  -40.49   88.78  -22.29  173.29    3.71   89.18  160.75
+
+DOCKED: MODEL        5
+DOCKED: USER    Run = 5
+DOCKED: USER    DPF = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.88 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  263.08 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -8.17 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -8.02 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.15 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -4.71 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -4.71 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move ligand.pdbqt
+DOCKED: USER    NEWDPF about -0.096000 -0.217000 -0.029000
+DOCKED: USER    NEWDPF tran0 5.555575 16.122131 66.818575
+DOCKED: USER    NEWDPF quaternion0 0.350641 0.002339 0.312053 0.882988
+DOCKED: USER    NEWDPF axisangle0 0.747006 0.004983 0.664798 55.990048
+DOCKED: USER    NEWDPF quat0 0.747006 0.004983 0.664798 55.990048
+DOCKED: USER    NEWDPF dihe0 23.92 -179.84 -44.15 -163.36 -40.49 88.78 -22.29 173.29 3.71 89.18 160.75 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = 5280637
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   LIG    1        5.355  18.448  66.362 -0.25 +0.29    +0.131 A 
+DOCKED: ATOM      2  C   LIG    1        6.079  18.875  65.249 -0.31 +0.22    +0.092 A 
+DOCKED: ATOM      3  C   LIG    1        7.224  18.184  64.849 -0.38 +0.23    +0.135 A 
+DOCKED: ATOM      4  C   LIG    1        7.638  17.062  65.570 -0.32 +0.17    +0.105 A 
+DOCKED: ATOM      5  C   LIG    1        8.840  16.314  65.174 -0.35 +0.28    +0.197 A 
+DOCKED: ATOM      6  C   LIG    1        9.185  15.143  66.006 -0.40 +0.15    +0.098 A 
+DOCKED: ATOM      7  C   LIG    1        8.404  14.827  67.051 -0.24 +0.26    +0.139 A 
+DOCKED: ATOM      8  O   LIG    1        7.275  15.539  67.427 +0.02 -0.89    -0.454 OA
+DOCKED: ATOM      9  O   LIG    1        9.523  16.636  64.212 -0.40 -0.36    -0.287 OA
+DOCKED: ATOM     10  C   LIG    1        6.914  16.633  66.682 -0.11 +0.26    +0.146 A 
+DOCKED: ATOM     11  C   LIG    1        5.772  17.326  67.080 -0.17 +0.17    +0.093 A 
+DOCKED: ENDROOT
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     12  C   LIG    1        8.703  13.673  67.924 -0.33 +0.04    +0.021 A 
+DOCKED: ATOM     13  C   LIG    1        7.663  12.937  68.494 -0.25 +0.02    +0.015 A 
+DOCKED: ATOM     14  C   LIG    1        7.946  11.848  69.319 -0.16 +0.04    +0.050 A 
+DOCKED: ATOM     15  C   LIG    1        9.271  11.492  69.575 -0.16 +0.11    +0.158 A 
+DOCKED: ATOM     16  C   LIG    1       10.312  12.226  69.006 -0.26 +0.15    +0.159 A 
+DOCKED: ATOM     17  C   LIG    1       10.029  13.315  68.182 -0.33 +0.09    +0.060 A 
+DOCKED: BRANCH  24  25
+DOCKED: ATOM     18  O   LIG    1       11.609  11.886  69.248 -0.09 -0.32    -0.503 OA
+DOCKED: ATOM     19  H   LIG    1       11.638  10.945  69.493 -0.31 +0.09    +0.292 HD
+DOCKED: ENDBRANCH  24  25
+DOCKED: BRANCH  23  27
+DOCKED: ATOM     20  O   LIG    1        9.534  10.428  70.383 -0.08 -0.26    -0.503 OA
+DOCKED: ATOM     21  H   LIG    1       10.497  10.318  70.459 +0.06 +0.16    +0.292 HD
+DOCKED: ENDBRANCH  23  27
+DOCKED: ENDBRANCH  19  20
+DOCKED: BRANCH  15  33
+DOCKED: ATOM     22  O   LIG    1        7.896  18.643  63.757 -0.20 -0.75    -0.506 OA
+DOCKED: ATOM     23  H   LIG    1        8.851  18.643  63.920 -0.26 +0.31    +0.292 HD
+DOCKED: ENDBRANCH  15  33
+DOCKED: BRANCH  13  12
+DOCKED: ATOM     24  O   LIG    1        4.237  19.127  66.749 -0.54 -1.19    -0.461 OA
+DOCKED: BRANCH  12   2
+DOCKED: ATOM     25  O   LIG    1        5.679  20.928  67.098 -0.22 -0.83    -0.331 OA
+DOCKED: ATOM     26  C   LIG    1        4.446  20.330  67.488 -0.01 +0.83    +0.339 C 
+DOCKED: ATOM     27  C   LIG    1        4.471  19.970  68.974 -0.12 +0.35    +0.214 C 
+DOCKED: ATOM     28  C   LIG    1        4.840  21.180  69.833 -0.10 +0.25    +0.180 C 
+DOCKED: ATOM     29  C   LIG    1        6.079  21.890  69.286 -0.21 +0.26    +0.177 C 
+DOCKED: ATOM     30  C   LIG    1        5.936  22.154  67.785 -0.35 +0.36    +0.179 C 
+DOCKED: BRANCH   5   6
+DOCKED: ATOM     31  O   LIG    1        6.252  23.130  69.968 -0.07 -0.50    -0.386 OA
+DOCKED: ATOM     32  H   LIG    1        7.191  23.212  70.207 +0.10 +0.25    +0.210 HD
+DOCKED: ENDBRANCH   5   6
+DOCKED: BRANCH   4   8
+DOCKED: ATOM     33  O   LIG    1        5.129  20.748  71.164 -0.02 -0.45    -0.386 OA
+DOCKED: ATOM     34  H   LIG    1        5.906  21.247  71.469 +0.06 +0.23    +0.210 HD
+DOCKED: ENDBRANCH   4   8
+DOCKED: BRANCH   3  10
+DOCKED: ATOM     35  O   LIG    1        3.174  19.504  69.345 -0.04 -0.58    -0.383 OA
+DOCKED: ATOM     36  H   LIG    1        2.757  19.116  68.557 +0.05 +0.36    +0.210 HD
+DOCKED: ENDBRANCH   3  10
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   LIG    1        7.207  22.755  67.195 -0.48 +0.34    +0.190 C 
+DOCKED: BRANCH  37  38
+DOCKED: ATOM     38  O   LIG    1        8.101  23.049  68.253 -0.86 -0.53    -0.392 OA
+DOCKED: ATOM     39  H   LIG    1        7.821  23.892  68.650 +0.04 +0.26    +0.210 HD
+DOCKED: ENDBRANCH  37  38
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  12   2
+DOCKED: ENDBRANCH  13  12
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 6 of 10
+Run: 6 Seed: 367755399 121145581 [ Run 6 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -12.652
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 3.584 20.840 67.717 quatxyzw 0.159631 0.169603 -0.404961 -0.884171 center -0.096 -0.217 -0.029 ntor 11 17.3655 -170.7368 -19.3238 -165.2395 162.9537 88.5043 14.9149 155.4558 -175.3792 124.6915 -16.3552
+State:	  3.584  20.840  67.717   0.342  0.363 -0.867 -55.701     17.37 -170.74  -19.32 -165.24  162.95   88.50   14.91  155.46 -175.38  124.69  -16.36
+
+DOCKED: MODEL        6
+DOCKED: USER    Run = 6
+DOCKED: USER    DPF = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.67 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  376.27 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -7.95 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -7.32 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.63 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -4.70 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -4.70 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move ligand.pdbqt
+DOCKED: USER    NEWDPF about -0.096000 -0.217000 -0.029000
+DOCKED: USER    NEWDPF tran0 3.583679 20.839546 67.716793
+DOCKED: USER    NEWDPF quaternion0 0.159631 0.169603 -0.404961 -0.884171
+DOCKED: USER    NEWDPF axisangle0 0.341703 0.363050 -0.866853 -55.700579
+DOCKED: USER    NEWDPF quat0 0.341703 0.363050 -0.866853 -55.700579
+DOCKED: USER    NEWDPF dihe0 17.37 -170.74 -19.32 -165.24 162.95 88.50 14.91 155.46 -175.38 124.69 -16.36 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = 5280637
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   LIG    1        3.951  22.331  69.533 -0.10 +0.19    +0.131 A 
+DOCKED: ATOM      2  C   LIG    1        4.963  23.264  69.310 -0.11 +0.14    +0.092 A 
+DOCKED: ATOM      3  C   LIG    1        6.005  22.971  68.429 -0.19 +0.23    +0.135 A 
+DOCKED: ATOM      4  C   LIG    1        6.026  21.739  67.772 -0.34 +0.21    +0.105 A 
+DOCKED: ATOM      5  C   LIG    1        7.112  21.401  66.839 -0.39 +0.39    +0.197 A 
+DOCKED: ATOM      6  C   LIG    1        7.033  20.071  66.200 -0.40 +0.20    +0.098 A 
+DOCKED: ATOM      7  C   LIG    1        6.003  19.262  66.492 -0.25 +0.31    +0.139 A 
+DOCKED: ATOM      8  O   LIG    1        4.985  19.579  67.378 -0.22 -1.01    -0.454 OA
+DOCKED: ATOM      9  O   LIG    1        8.032  22.171  66.600 -0.10 -0.42    -0.287 OA
+DOCKED: ATOM     10  C   LIG    1        5.015  20.805  67.994 -0.21 +0.30    +0.146 A 
+DOCKED: ATOM     11  C   LIG    1        3.975  21.100  68.876 -0.15 +0.16    +0.093 A 
+DOCKED: ENDROOT
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     12  C   LIG    1        5.877  17.918  65.890 -0.34 +0.04    +0.021 A 
+DOCKED: ATOM     13  C   LIG    1        7.018  17.160  65.623 -0.34 +0.03    +0.015 A 
+DOCKED: ATOM     14  C   LIG    1        6.899  15.892  65.054 -0.37 +0.09    +0.050 A 
+DOCKED: ATOM     15  C   LIG    1        5.637  15.379  64.752 -0.28 +0.34    +0.158 A 
+DOCKED: ATOM     16  C   LIG    1        4.495  16.135  65.017 -0.33 +0.30    +0.159 A 
+DOCKED: ATOM     17  C   LIG    1        4.615  17.402  65.586 -0.35 +0.12    +0.060 A 
+DOCKED: BRANCH  24  25
+DOCKED: ATOM     18  O   LIG    1        3.258  15.642  64.728 -0.18 -0.77    -0.503 OA
+DOCKED: ATOM     19  H   LIG    1        3.332  14.680  64.608 -0.16 +0.38    +0.292 HD
+DOCKED: ENDBRANCH  24  25
+DOCKED: BRANCH  23  27
+DOCKED: ATOM     20  O   LIG    1        5.534  14.140  64.195 -0.58 -1.42    -0.503 OA
+DOCKED: ATOM     21  H   LIG    1        4.614  13.994  63.913 -0.38 +0.62    +0.292 HD
+DOCKED: ENDBRANCH  23  27
+DOCKED: ENDBRANCH  19  20
+DOCKED: BRANCH  15  33
+DOCKED: ATOM     22  O   LIG    1        6.969  23.916  68.245 -0.06 -0.78    -0.506 OA
+DOCKED: ATOM     23  H   LIG    1        7.770  23.517  67.872 +0.13 +0.40    +0.292 HD
+DOCKED: ENDBRANCH  15  33
+DOCKED: BRANCH  13  12
+DOCKED: ATOM     24  O   LIG    1        2.935  22.621  70.396 +0.00 -0.56    -0.461 OA
+DOCKED: BRANCH  12   2
+DOCKED: ATOM     25  O   LIG    1        1.145  21.855  69.110 -0.05 -0.50    -0.331 OA
+DOCKED: ATOM     26  C   LIG    1        1.682  22.974  69.811 -0.03 +0.42    +0.339 C 
+DOCKED: ATOM     27  C   LIG    1        1.923  24.142  68.854 +0.00 +0.25    +0.214 C 
+DOCKED: ATOM     28  C   LIG    1        0.657  24.487  68.069 -0.10 +0.23    +0.180 C 
+DOCKED: ATOM     29  C   LIG    1        0.021  23.235  67.464 -0.15 +0.31    +0.177 C 
+DOCKED: ATOM     30  C   LIG    1       -0.125  22.137  68.520 -0.08 +0.30    +0.179 C 
+DOCKED: BRANCH   5   6
+DOCKED: ATOM     31  O   LIG    1       -1.264  23.563  66.944 -0.06 -0.65    -0.386 OA
+DOCKED: ATOM     32  H   LIG    1       -1.333  23.183  66.051 +0.09 +0.45    +0.210 HD
+DOCKED: ENDBRANCH   5   6
+DOCKED: BRANCH   4   8
+DOCKED: ATOM     33  O   LIG    1        0.988  25.376  67.000 -0.11 -0.46    -0.386 OA
+DOCKED: ATOM     34  H   LIG    1        1.857  25.762  67.202 -0.41 +0.16    +0.210 HD
+DOCKED: ENDBRANCH   4   8
+DOCKED: BRANCH   3  10
+DOCKED: ATOM     35  O   LIG    1        2.328  25.275  69.621 +0.02 -0.38    -0.383 OA
+DOCKED: ATOM     36  H   LIG    1        2.765  24.952  70.428 +0.02 +0.22    +0.210 HD
+DOCKED: ENDBRANCH   3  10
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   LIG    1       -0.649  20.838  67.914 -0.13 +0.44    +0.190 C 
+DOCKED: BRANCH  37  38
+DOCKED: ATOM     38  O   LIG    1       -1.377  21.150  66.740 -0.67 -1.43    -0.392 OA
+DOCKED: ATOM     39  H   LIG    1       -1.930  21.927  66.934 +0.06 +0.54    +0.210 HD
+DOCKED: ENDBRANCH  37  38
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  12   2
+DOCKED: ENDBRANCH  13  12
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 7 of 10
+Run: 7 Seed: 82799717 886506875 [ Run 7 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -12.129
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 3.127 20.832 67.759 quatxyzw -0.194879 -0.129427 0.389720 0.890724 center -0.096 -0.217 -0.029 ntor 11 24.2657 -170.1842 -13.9390 -76.6831 143.8431 88.8137 -20.1778 -179.9135 179.0318 132.9102 14.5679
+State:	  3.127  20.832  67.759  -0.429 -0.285  0.857 54.071     24.27 -170.18  -13.94  -76.68  143.84   88.81  -20.18 -179.91  179.03  132.91   14.57
+
+DOCKED: MODEL        7
+DOCKED: USER    Run = 7
+DOCKED: USER    DPF = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.27 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  742.93 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -7.55 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -6.83 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.72 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -4.58 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -4.58 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move ligand.pdbqt
+DOCKED: USER    NEWDPF about -0.096000 -0.217000 -0.029000
+DOCKED: USER    NEWDPF tran0 3.126955 20.831857 67.758608
+DOCKED: USER    NEWDPF quaternion0 -0.194879 -0.129427 0.389720 0.890724
+DOCKED: USER    NEWDPF axisangle0 -0.428734 -0.284741 0.857385 54.071283
+DOCKED: USER    NEWDPF quat0 -0.428734 -0.284741 0.857385 54.071283
+DOCKED: USER    NEWDPF dihe0 24.27 -170.18 -13.94 -76.68 143.84 88.81 -20.18 -179.91 179.03 132.91 14.57 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = 5280637
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   LIG    1        3.285  22.264  69.651 -0.08 +0.18    +0.131 A 
+DOCKED: ATOM      2  C   LIG    1        4.307  23.210  69.567 -0.10 +0.13    +0.092 A 
+DOCKED: ATOM      3  C   LIG    1        5.439  22.953  68.793 -0.16 +0.22    +0.135 A 
+DOCKED: ATOM      4  C   LIG    1        5.542  21.743  68.103 -0.28 +0.20    +0.105 A 
+DOCKED: ATOM      5  C   LIG    1        6.723  21.442  67.281 -0.35 +0.39    +0.197 A 
+DOCKED: ATOM      6  C   LIG    1        6.725  20.134  66.594 -0.34 +0.21    +0.098 A 
+DOCKED: ATOM      7  C   LIG    1        5.677  19.309  66.748 -0.24 +0.32    +0.139 A 
+DOCKED: ATOM      8  O   LIG    1        4.568  19.592  67.531 -0.27 -1.01    -0.454 OA
+DOCKED: ATOM      9  O   LIG    1        7.656  22.225  67.167 -0.42 -0.46    -0.287 OA
+DOCKED: ATOM     10  C   LIG    1        4.521  20.796  68.186 -0.19 +0.29    +0.146 A 
+DOCKED: ATOM     11  C   LIG    1        3.391  21.055  68.961 -0.13 +0.15    +0.093 A 
+DOCKED: ENDROOT
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     12  C   LIG    1        5.628  17.986  66.093 -0.32 +0.04    +0.021 A 
+DOCKED: ATOM     13  C   LIG    1        6.810  17.295  65.819 -0.32 +0.03    +0.015 A 
+DOCKED: ATOM     14  C   LIG    1        6.764  16.046  65.200 -0.34 +0.09    +0.050 A 
+DOCKED: ATOM     15  C   LIG    1        5.534  15.484  64.854 -0.27 +0.33    +0.158 A 
+DOCKED: ATOM     16  C   LIG    1        4.352  16.173  65.126 -0.33 +0.30    +0.159 A 
+DOCKED: ATOM     17  C   LIG    1        4.399  17.422  65.745 -0.28 +0.12    +0.060 A 
+DOCKED: BRANCH  24  25
+DOCKED: ATOM     18  O   LIG    1        3.146  15.632  64.793 -0.16 -0.75    -0.503 OA
+DOCKED: ATOM     19  H   LIG    1        3.246  14.666  64.746 -0.21 +0.38    +0.292 HD
+DOCKED: ENDBRANCH  24  25
+DOCKED: BRANCH  23  27
+DOCKED: ATOM     20  O   LIG    1        5.502  14.264  64.249 -0.54 -1.37    -0.503 OA
+DOCKED: ATOM     21  H   LIG    1        4.598  14.089  63.935 -0.39 +0.62    +0.292 HD
+DOCKED: ENDBRANCH  23  27
+DOCKED: ENDBRANCH  19  20
+DOCKED: BRANCH  15  33
+DOCKED: ATOM     22  O   LIG    1        6.409  23.908  68.745 -0.02 -0.80    -0.506 OA
+DOCKED: ATOM     23  H   LIG    1        7.224  23.547  68.367 +0.18 +0.43    +0.292 HD
+DOCKED: ENDBRANCH  15  33
+DOCKED: BRANCH  13  12
+DOCKED: ATOM     24  O   LIG    1        2.180  22.520  70.410 +0.01 -0.55    -0.461 OA
+DOCKED: BRANCH  12   2
+DOCKED: ATOM     25  O   LIG    1        0.722  20.806  69.793 -0.02 -0.46    -0.331 OA
+DOCKED: ATOM     26  C   LIG    1        0.917  22.218  69.819 -0.01 +0.44    +0.339 C 
+DOCKED: ATOM     27  C   LIG    1        0.914  22.786  68.399 -0.11 +0.34    +0.214 C 
+DOCKED: ATOM     28  C   LIG    1       -0.348  22.377  67.639 -0.15 +0.35    +0.180 C 
+DOCKED: ATOM     29  C   LIG    1       -0.611  20.876  67.770 -0.14 +0.42    +0.177 C 
+DOCKED: ATOM     30  C   LIG    1       -0.541  20.438  69.235 -0.06 +0.28    +0.179 C 
+DOCKED: BRANCH   5   6
+DOCKED: ATOM     31  O   LIG    1       -1.904  20.577  67.250 -0.65 -1.25    -0.386 OA
+DOCKED: ATOM     32  H   LIG    1       -2.326  19.935  67.846 +0.04 +0.52    +0.210 HD
+DOCKED: ENDBRANCH   5   6
+DOCKED: BRANCH   4   8
+DOCKED: ATOM     33  O   LIG    1       -0.187  22.679  66.252 -0.17 -0.99    -0.386 OA
+DOCKED: ATOM     34  H   LIG    1        0.308  23.514  66.193 +0.10 +0.43    +0.210 HD
+DOCKED: ENDBRANCH   4   8
+DOCKED: BRANCH   3  10
+DOCKED: ATOM     35  O   LIG    1        0.975  24.209  68.486 -0.05 -0.48    -0.383 OA
+DOCKED: ATOM     36  H   LIG    1        1.433  24.442  69.311 +0.02 +0.24    +0.210 HD
+DOCKED: ENDBRANCH   3  10
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   LIG    1       -0.684  18.926  69.379 -0.05 +0.29    +0.190 C 
+DOCKED: BRANCH  37  38
+DOCKED: ATOM     38  O   LIG    1       -0.852  18.365  68.090 -0.09 -0.81    -0.392 OA
+DOCKED: ATOM     39  H   LIG    1       -1.775  18.514  67.820 +0.04 +0.49    +0.210 HD
+DOCKED: ENDBRANCH  37  38
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  12   2
+DOCKED: ENDBRANCH  13  12
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 8 of 10
+Run: 8 Seed: 159483964 746022785 [ Run 8 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -12.380
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 4.788 20.721 68.498 quatxyzw -0.034913 -0.398186 0.378566 0.834816 center -0.096 -0.217 -0.029 ntor 11 -4.2256 179.8856 20.7064 -145.4982 -26.4967 88.1700 34.4631 124.2443 -131.9310 73.0734 -18.9098
+State:	  4.788  20.721  68.498  -0.063 -0.723  0.688 66.807     -4.23  179.89   20.71 -145.50  -26.50   88.17   34.46  124.24 -131.93   73.07  -18.91
+
+DOCKED: MODEL        8
+DOCKED: USER    Run = 8
+DOCKED: USER    DPF = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.20 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  831.04 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -7.48 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -7.21 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.28 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -4.90 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -4.90 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move ligand.pdbqt
+DOCKED: USER    NEWDPF about -0.096000 -0.217000 -0.029000
+DOCKED: USER    NEWDPF tran0 4.788228 20.721201 68.498443
+DOCKED: USER    NEWDPF quaternion0 -0.034913 -0.398186 0.378566 0.834816
+DOCKED: USER    NEWDPF axisangle0 -0.063416 -0.723277 0.687640 66.806725
+DOCKED: USER    NEWDPF quat0 -0.063416 -0.723277 0.687640 66.806725
+DOCKED: USER    NEWDPF dihe0 -4.23 179.89 20.71 -145.50 -26.50 88.17 34.46 124.24 -131.93 73.07 -18.91 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = 5280637
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   LIG    1        5.823  22.319  69.924 -0.14 +0.17    +0.131 A 
+DOCKED: ATOM      2  C   LIG    1        6.471  23.352  69.248 -0.25 +0.13    +0.092 A 
+DOCKED: ATOM      3  C   LIG    1        6.967  23.145  67.960 -0.37 +0.22    +0.135 A 
+DOCKED: ATOM      4  C   LIG    1        6.810  21.897  67.354 -0.45 +0.20    +0.105 A 
+DOCKED: ATOM      5  C   LIG    1        7.323  21.647  65.999 -0.38 +0.42    +0.197 A 
+DOCKED: ATOM      6  C   LIG    1        7.099  20.292  65.455 -0.34 +0.21    +0.098 A 
+DOCKED: ATOM      7  C   LIG    1        6.455  19.382  66.202 -0.30 +0.30    +0.139 A 
+DOCKED: ATOM      8  O   LIG    1        5.979  19.617  67.483 -0.11 -0.90    -0.454 OA
+DOCKED: ATOM      9  O   LIG    1        7.904  22.507  65.351 -0.54 -0.50    -0.287 OA
+DOCKED: ATOM     10  C   LIG    1        6.161  20.863  68.029 -0.25 +0.27    +0.146 A 
+DOCKED: ATOM     11  C   LIG    1        5.667  21.072  69.316 -0.17 +0.14    +0.093 A 
+DOCKED: ENDROOT
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     12  C   LIG    1        6.210  18.009  65.714 -0.36 +0.04    +0.021 A 
+DOCKED: ATOM     13  C   LIG    1        7.239  17.065  65.733 -0.34 +0.03    +0.015 A 
+DOCKED: ATOM     14  C   LIG    1        7.008  15.769  65.272 -0.36 +0.09    +0.050 A 
+DOCKED: ATOM     15  C   LIG    1        5.748  15.414  64.791 -0.28 +0.33    +0.158 A 
+DOCKED: ATOM     16  C   LIG    1        4.719  16.355  64.770 -0.34 +0.30    +0.159 A 
+DOCKED: ATOM     17  C   LIG    1        4.949  17.651  65.231 -0.39 +0.13    +0.060 A 
+DOCKED: BRANCH  24  25
+DOCKED: ATOM     18  O   LIG    1        3.483  16.018  64.304 -0.21 -0.86    -0.503 OA
+DOCKED: ATOM     19  H   LIG    1        3.522  15.108  63.965 -0.14 +0.43    +0.292 HD
+DOCKED: ENDBRANCH  24  25
+DOCKED: BRANCH  23  27
+DOCKED: ATOM     20  O   LIG    1        5.535  14.145  64.342 -0.60 -1.51    -0.503 OA
+DOCKED: ATOM     21  H   LIG    1        4.612  14.064  64.045 -0.38 +0.65    +0.292 HD
+DOCKED: ENDBRANCH  23  27
+DOCKED: ENDBRANCH  19  20
+DOCKED: BRANCH  15  33
+DOCKED: ATOM     22  O   LIG    1        7.593  24.186  67.343 -0.15 -0.69    -0.506 OA
+DOCKED: ATOM     23  H   LIG    1        7.602  24.057  66.383 -0.23 +0.40    +0.292 HD
+DOCKED: ENDBRANCH  15  33
+DOCKED: BRANCH  13  12
+DOCKED: ATOM     24  O   LIG    1        5.341  22.527  71.183 +0.01 -0.52    -0.461 OA
+DOCKED: BRANCH  12   2
+DOCKED: ATOM     25  O   LIG    1        3.289  22.416  70.078 -0.03 -0.42    -0.331 OA
+DOCKED: ATOM     26  C   LIG    1        3.938  22.764  71.298 -0.00 +0.37    +0.339 C 
+DOCKED: ATOM     27  C   LIG    1        3.737  24.248  71.608 -0.03 +0.22    +0.214 C 
+DOCKED: ATOM     28  C   LIG    1        2.255  24.622  71.599 -0.02 +0.18    +0.180 C 
+DOCKED: ATOM     29  C   LIG    1        1.557  24.090  70.347 -0.04 +0.19    +0.177 C 
+DOCKED: ATOM     30  C   LIG    1        1.874  22.608  70.136 -0.04 +0.22    +0.179 C 
+DOCKED: BRANCH   5   6
+DOCKED: ATOM     31  O   LIG    1        0.148  24.256  70.486 +0.00 -0.41    -0.386 OA
+DOCKED: ATOM     32  H   LIG    1       -0.233  24.340  69.595 +0.03 +0.23    +0.210 HD
+DOCKED: ENDBRANCH   5   6
+DOCKED: BRANCH   4   8
+DOCKED: ATOM     33  O   LIG    1        2.123  26.045  71.609 -0.01 -0.37    -0.386 OA
+DOCKED: ATOM     34  H   LIG    1        1.279  26.261  71.177 +0.01 +0.20    +0.210 HD
+DOCKED: ENDBRANCH   4   8
+DOCKED: BRANCH   3  10
+DOCKED: ATOM     35  O   LIG    1        4.285  24.515  72.898 +0.00 -0.36    -0.383 OA
+DOCKED: ATOM     36  H   LIG    1        4.994  23.870  73.064 +0.02 +0.19    +0.210 HD
+DOCKED: ENDBRANCH   3  10
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   LIG    1        1.285  22.085  68.830 -0.10 +0.30    +0.190 C 
+DOCKED: BRANCH  37  38
+DOCKED: ATOM     38  O   LIG    1       -0.110  22.329  68.835 -0.01 -0.60    -0.392 OA
+DOCKED: ATOM     39  H   LIG    1       -0.393  22.408  69.763 +0.03 +0.27    +0.210 HD
+DOCKED: ENDBRANCH  37  38
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  12   2
+DOCKED: ENDBRANCH  13  12
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 9 of 10
+Run: 9 Seed: 1065115230 1921459066 [ Run 9 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -11.743
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 5.813 14.486 66.132 quatxyzw 0.021209 -0.993697 -0.098846 -0.048434 center -0.096 -0.217 -0.029 ntor 11 11.7189 178.0039 16.1321 85.7637 -12.3084 87.4493 81.6954 -90.0753 10.7965 74.5137 -26.7503
+State:	  5.813  14.486  66.132   0.021 -0.995 -0.099 -174.448     11.72  178.00   16.13   85.76  -12.31   87.45   81.70  -90.08   10.80   74.51  -26.75
+
+DOCKED: MODEL        9
+DOCKED: USER    Run = 9
+DOCKED: USER    DPF = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -3.56 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =    2.46 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -6.84 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -6.36 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.48 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -4.90 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -4.90 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move ligand.pdbqt
+DOCKED: USER    NEWDPF about -0.096000 -0.217000 -0.029000
+DOCKED: USER    NEWDPF tran0 5.812857 14.486284 66.132283
+DOCKED: USER    NEWDPF quaternion0 0.021209 -0.993697 -0.098846 -0.048434
+DOCKED: USER    NEWDPF axisangle0 0.021233 -0.994865 -0.098962 -174.447752
+DOCKED: USER    NEWDPF quat0 0.021233 -0.994865 -0.098962 -174.447752
+DOCKED: USER    NEWDPF dihe0 11.72 178.00 16.13 85.76 -12.31 87.45 81.70 -90.08 10.80 74.51 -26.75 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = 5280637
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   LIG    1        7.191  16.213  65.252 -0.29 +0.22    +0.131 A 
+DOCKED: ATOM      2  C   LIG    1        7.091  17.427  65.933 -0.28 +0.16    +0.092 A 
+DOCKED: ATOM      3  C   LIG    1        5.918  17.753  66.615 -0.20 +0.25    +0.135 A 
+DOCKED: ATOM      4  C   LIG    1        4.847  16.856  66.613 -0.19 +0.19    +0.105 A 
+DOCKED: ATOM      5  C   LIG    1        3.598  17.172  67.322 -0.08 +0.34    +0.197 A 
+DOCKED: ATOM      6  C   LIG    1        2.533  16.151  67.254 -0.09 +0.15    +0.098 A 
+DOCKED: ATOM      7  C   LIG    1        2.752  15.016  66.570 -0.18 +0.21    +0.139 A 
+DOCKED: ATOM      8  O   LIG    1        3.927  14.725  65.896 -0.12 -1.00    -0.454 OA
+DOCKED: ATOM      9  O   LIG    1        3.441  18.219  67.935 -0.12 -0.51    -0.287 OA
+DOCKED: ATOM     10  C   LIG    1        4.947  15.642  65.933 -0.23 +0.30    +0.146 A 
+DOCKED: ATOM     11  C   LIG    1        6.119  15.319  65.251 -0.27 +0.21    +0.093 A 
+DOCKED: ENDROOT
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     12  C   LIG    1        1.720  13.964  66.461 -0.18 +0.03    +0.021 A 
+DOCKED: ATOM     13  C   LIG    1        2.079  12.618  66.559 -0.15 +0.02    +0.015 A 
+DOCKED: ATOM     14  C   LIG    1        1.105  11.625  66.454 -0.11 +0.05    +0.050 A 
+DOCKED: ATOM     15  C   LIG    1       -0.230  11.975  66.252 -0.07 +0.17    +0.158 A 
+DOCKED: ATOM     16  C   LIG    1       -0.590  13.319  66.152 -0.11 +0.18    +0.159 A 
+DOCKED: ATOM     17  C   LIG    1        0.383  14.312  66.257 -0.14 +0.07    +0.060 A 
+DOCKED: BRANCH  24  25
+DOCKED: ATOM     18  O   LIG    1       -1.892  13.672  65.956 -0.01 -0.62    -0.503 OA
+DOCKED: ATOM     19  H   LIG    1       -2.446  12.885  66.094 +0.05 +0.32    +0.292 HD
+DOCKED: ENDBRANCH  24  25
+DOCKED: BRANCH  23  27
+DOCKED: ATOM     20  O   LIG    1       -1.171  10.996  66.150 +0.00 -0.48    -0.503 OA
+DOCKED: ATOM     21  H   LIG    1       -2.046  11.407  66.043 +0.03 +0.28    +0.292 HD
+DOCKED: ENDBRANCH  23  27
+DOCKED: ENDBRANCH  19  20
+DOCKED: BRANCH  15  33
+DOCKED: ATOM     22  O   LIG    1        5.869  18.950  67.264 -0.07 -0.99    -0.506 OA
+DOCKED: ATOM     23  H   LIG    1        5.138  18.964  67.899 +0.12 +0.54    +0.292 HD
+DOCKED: ENDBRANCH  15  33
+DOCKED: BRANCH  13  12
+DOCKED: ATOM     24  O   LIG    1        8.340  15.899  64.586 -0.16 -0.69    -0.461 OA
+DOCKED: BRANCH  12   2
+DOCKED: ATOM     25  O   LIG    1        8.707  14.568  66.466 -0.25 -0.55    -0.331 OA
+DOCKED: ATOM     26  C   LIG    1        9.307  15.138  65.306 -0.26 +0.48    +0.339 C 
+DOCKED: ATOM     27  C   LIG    1       10.447  16.078  65.699 -0.48 +0.27    +0.214 C 
+DOCKED: ATOM     28  C   LIG    1       11.459  15.376  66.606 -0.40 +0.19    +0.180 C 
+DOCKED: ATOM     29  C   LIG    1       10.761  14.641  67.750 -0.36 +0.29    +0.177 C 
+DOCKED: ATOM     30  C   LIG    1        9.620  13.770  67.220 -0.26 +0.24    +0.179 C 
+DOCKED: BRANCH   5   6
+DOCKED: ATOM     31  O   LIG    1       11.707  13.819  68.429 -0.34 -0.43    -0.386 OA
+DOCKED: ATOM     32  H   LIG    1       12.593  14.189  68.273 -0.35 +0.12    +0.210 HD
+DOCKED: ENDBRANCH   5   6
+DOCKED: BRANCH   4   8
+DOCKED: ATOM     33  O   LIG    1       12.341  16.346  67.174 -0.33 -0.41    -0.386 OA
+DOCKED: ATOM     34  H   LIG    1       12.826  15.909  67.896 +0.08 +0.18    +0.210 HD
+DOCKED: ENDBRANCH   4   8
+DOCKED: BRANCH   3  10
+DOCKED: ATOM     35  O   LIG    1       11.101  16.513  64.507 -0.30 -0.44    -0.383 OA
+DOCKED: ATOM     36  H   LIG    1       10.457  16.475  63.779 +0.16 +0.25    +0.210 HD
+DOCKED: ENDBRANCH   3  10
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   LIG    1        8.835  13.118  68.354 -0.29 +0.29    +0.190 C 
+DOCKED: BRANCH  37  38
+DOCKED: ATOM     38  O   LIG    1        7.785  13.990  68.733 -0.22 -0.80    -0.392 OA
+DOCKED: ATOM     39  H   LIG    1        7.591  14.566  67.974 +0.08 +0.43    +0.210 HD
+DOCKED: ENDBRANCH  37  38
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  12   2
+DOCKED: ENDBRANCH  13  12
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 10 of 10
+Run: 10 Seed: 96007735 1968509957 [ Run 10 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -12.968
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 2.782 20.922 67.344 quatxyzw 0.225888 0.049059 -0.406397 -0.883974 center -0.096 -0.217 -0.029 ntor 11 -1.1437 -164.9724 -25.2441 87.7376 142.3700 -103.9264 72.6239 -61.2131 143.2685 137.5510 -30.4315
+State:	  2.782  20.922  67.344   0.483  0.105 -0.869 -55.749     -1.14 -164.97  -25.24   87.74  142.37 -103.93   72.62  -61.21  143.27  137.55  -30.43
+
+DOCKED: MODEL       10
+DOCKED: USER    Run = 10
+DOCKED: USER    DPF = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.37 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  115.54 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -8.65 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -7.80 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.85 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -4.32 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -4.32 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move ligand.pdbqt
+DOCKED: USER    NEWDPF about -0.096000 -0.217000 -0.029000
+DOCKED: USER    NEWDPF tran0 2.781623 20.921514 67.344220
+DOCKED: USER    NEWDPF quaternion0 0.225888 0.049059 -0.406397 -0.883974
+DOCKED: USER    NEWDPF axisangle0 0.483144 0.104930 -0.869231 -55.749066
+DOCKED: USER    NEWDPF quat0 0.483144 0.104930 -0.869231 -55.749066
+DOCKED: USER    NEWDPF dihe0 -1.14 -164.97 -25.24 87.74 142.37 -103.93 72.62 -61.21 143.27 137.55 -30.43 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = 5280637
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   LIG    1        2.745  22.366  69.233 -0.11 +0.19    +0.131 A 
+DOCKED: ATOM      2  C   LIG    1        3.835  23.233  69.310 -0.09 +0.13    +0.092 A 
+DOCKED: ATOM      3  C   LIG    1        5.053  22.882  68.726 -0.14 +0.22    +0.135 A 
+DOCKED: ATOM      4  C   LIG    1        5.173  21.658  68.065 -0.27 +0.21    +0.105 A 
+DOCKED: ATOM      5  C   LIG    1        6.443  21.259  67.442 -0.31 +0.40    +0.197 A 
+DOCKED: ATOM      6  C   LIG    1        6.456  19.945  66.769 -0.32 +0.21    +0.098 A 
+DOCKED: ATOM      7  C   LIG    1        5.339  19.201  66.756 -0.22 +0.33    +0.139 A 
+DOCKED: ATOM      8  O   LIG    1        4.144  19.576  67.352 -0.45 -1.08    -0.454 OA
+DOCKED: ATOM      9  O   LIG    1        7.438  21.970  67.475 -0.41 -0.48    -0.287 OA
+DOCKED: ATOM     10  C   LIG    1        4.083  20.790  67.987 -0.19 +0.31    +0.146 A 
+DOCKED: ATOM     11  C   LIG    1        2.868  21.143  68.572 -0.16 +0.17    +0.093 A 
+DOCKED: ENDROOT
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     12  C   LIG    1        5.295  17.875  66.106 -0.32 +0.04    +0.021 A 
+DOCKED: ATOM     13  C   LIG    1        6.387  17.422  65.363 -0.36 +0.03    +0.015 A 
+DOCKED: ATOM     14  C   LIG    1        6.345  16.171  64.748 -0.36 +0.09    +0.050 A 
+DOCKED: ATOM     15  C   LIG    1        5.211  15.369  64.876 -0.25 +0.34    +0.158 A 
+DOCKED: ATOM     16  C   LIG    1        4.118  15.819  65.617 -0.29 +0.30    +0.159 A 
+DOCKED: ATOM     17  C   LIG    1        4.160  17.070  66.232 -0.24 +0.11    +0.060 A 
+DOCKED: BRANCH  24  25
+DOCKED: ATOM     18  O   LIG    1        3.006  15.043  65.750 -0.12 -0.78    -0.503 OA
+DOCKED: ATOM     19  H   LIG    1        3.144  14.222  65.247 -0.30 +0.43    +0.292 HD
+DOCKED: ENDBRANCH  24  25
+DOCKED: BRANCH  23  27
+DOCKED: ATOM     20  O   LIG    1        5.181  14.149  64.270 -0.51 -1.38    -0.503 OA
+DOCKED: ATOM     21  H   LIG    1        4.263  13.828  64.248 -0.42 +0.58    +0.292 HD
+DOCKED: ENDBRANCH  23  27
+DOCKED: ENDBRANCH  19  20
+DOCKED: BRANCH  15  33
+DOCKED: ATOM     22  O   LIG    1        6.087  23.764  68.829 +0.00 -0.81    -0.506 OA
+DOCKED: ATOM     23  H   LIG    1        6.936  23.302  68.762 +0.17 +0.43    +0.292 HD
+DOCKED: ENDBRANCH  15  33
+DOCKED: BRANCH  13  12
+DOCKED: ATOM     24  O   LIG    1        1.557  22.714  69.806 +0.00 -0.59    -0.461 OA
+DOCKED: BRANCH  12   2
+DOCKED: ATOM     25  O   LIG    1       -0.020  22.544  68.094 -0.07 -0.57    -0.331 OA
+DOCKED: ATOM     26  C   LIG    1        0.641  23.438  68.986 -0.03 +0.45    +0.339 C 
+DOCKED: ATOM     27  C   LIG    1        1.436  24.484  68.204 +0.02 +0.25    +0.214 C 
+DOCKED: ATOM     28  C   LIG    1        0.554  25.207  67.186 -0.14 +0.22    +0.180 C 
+DOCKED: ATOM     29  C   LIG    1       -0.261  24.215  66.356 -0.21 +0.29    +0.177 C 
+DOCKED: ATOM     30  C   LIG    1       -0.972  23.205  67.260 -0.14 +0.32    +0.179 C 
+DOCKED: BRANCH   5   6
+DOCKED: ATOM     31  O   LIG    1       -1.230  24.926  65.589 -0.12 -0.55    -0.386 OA
+DOCKED: ATOM     32  H   LIG    1       -0.897  25.829  65.448 +0.09 +0.27    +0.210 HD
+DOCKED: ENDBRANCH   5   6
+DOCKED: BRANCH   4   8
+DOCKED: ATOM     33  O   LIG    1        1.376  25.961  66.294 -0.15 -0.44    -0.386 OA
+DOCKED: ATOM     34  H   LIG    1        2.102  26.341  66.819 -0.51 +0.16    +0.210 HD
+DOCKED: ENDBRANCH   4   8
+DOCKED: BRANCH   3  10
+DOCKED: ATOM     35  O   LIG    1        1.963  25.432  69.132 +0.06 -0.36    -0.383 OA
+DOCKED: ATOM     36  H   LIG    1        2.254  26.214  68.631 -0.30 +0.15    +0.210 HD
+DOCKED: ENDBRANCH   3  10
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   LIG    1       -1.696  22.135  66.449 -0.12 +0.54    +0.190 C 
+DOCKED: BRANCH  37  38
+DOCKED: ATOM     38  O   LIG    1       -1.135  20.874  66.766 -0.58 -1.50    -0.392 OA
+DOCKED: ATOM     39  H   LIG    1       -0.605  20.981  67.575 +0.05 +0.54    +0.210 HD
+DOCKED: ENDBRANCH  37  38
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  12   2
+DOCKED: ENDBRANCH  13  12
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+DPF> analysis                             # perform a ranked cluster analysis
+
+
+		CLUSTER ANALYSIS OF CONFORMATIONS
+		_________________________________
+
+Number of conformations = 10
+
+RMSD cluster analysis will be performed using the ligand atoms only (39 / 39 total atoms).
+
+Outputting structurally similar clusters, ranked in order of increasing energy.
+
+
+________________________________________________________________________________
+
+Number of distinct conformational clusters found = 5,  out of 10 runs,
+Using an rmsd-tolerance of 2.0 A
+
+
+	CLUSTERING HISTOGRAM
+	____________________
+
+________________________________________________________________________________
+     |           |     |           |     |                                    
+Clus | Lowest    | Run | Mean      | Num | Histogram                          
+-ter | Binding   |     | Binding   | in  |                                    
+Rank | Energy    |     | Energy    | Clus|    5    10   15   20   25   30   35
+_____|___________|_____|___________|_____|____:____|____:____|____:____|____:___
+   1 |     -5.42 |   4 |     -5.15 |   2 |##
+   2 |     -5.37 |  10 |     -4.55 |   4 |####
+   3 |     -4.20 |   8 |     -4.20 |   1 |#
+   4 |     -4.12 |   1 |     -3.98 |   2 |##
+   5 |     -3.56 |   9 |     -3.56 |   1 |#
+_____|___________|_____|___________|_____|______________________________________
+
+
+Number of multi-member conformational clusters found = 3, out of 10 runs.
+
+	RMSD TABLE
+	__________
+
+_____________________________________________________________________
+     |      |      |           |         |                 |
+Rank | Sub- | Run  | Binding   | Cluster | Reference       | Grep
+     | Rank |      | Energy    | RMSD    | RMSD            | Pattern
+_____|______|______|___________|_________|_________________|___________
+   1      1      4       -5.42      0.00     69.22           RANKING
+   1      2      5       -4.88      1.41     69.40           RANKING
+   2      1     10       -5.37      0.00     69.09           RANKING
+   2      2      6       -4.67      1.17     69.20           RANKING
+   2      3      7       -4.27      1.52     69.09           RANKING
+   2      4      2       -3.87      1.54     69.49           RANKING
+   3      1      8       -4.20      0.00     70.24           RANKING
+   4      1      1       -4.12      0.00     69.10           RANKING
+   4      2      3       -3.84      1.32     68.39           RANKING
+   5      1      9       -3.56      0.00     67.36           RANKING
+_______________________________________________________________________
+
+
+
+	INFORMATION ENTROPY ANALYSIS FOR THIS CLUSTERING
+	________________________________________________
+
+
+Information entropy for this clustering = 0.64  (rmstol = 2.00 Angstrom)
+
+_______________________________________________________________________
+
+
+	STATISTICAL MECHANICAL ANALYSIS
+	_______________________________
+
+
+Partition function, Q =    10.07            at Temperature, T = 298.15 K
+Free energy,        A ~ -1368.66 kcal/mol   at Temperature, T = 298.15 K
+Internal energy,    U =    -4.42 kcal/mol   at Temperature, T = 298.15 K
+Entropy,            S =     4.58 kcal/mol/K at Temperature, T = 298.15 K
+
+_______________________________________________________________________
+
+
+	LOWEST ENERGY DOCKED CONFORMATION from EACH CLUSTER
+	___________________________________________________
+
+
+
+Keeping original residue number (specified in the input PDBQ file) for outputting.
+
+MODEL        4
+USER    Run = 4
+USER    Cluster Rank = 1
+USER    Number of conformations in this cluster = 2
+USER  
+USER    RMSD from reference structure       = 69.224 A
+USER  
+USER    Estimated Free Energy of Binding    =   -5.42 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =  107.24 uM (micromolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =   -8.70 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -8.40 kcal/mol
+USER        Electrostatic Energy            =   -0.30 kcal/mol
+USER    (2) Final Total Internal Energy     =   -4.45 kcal/mol
+USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -4.45 kcal/mol
+USER    
+USER    
+USER  
+USER    DPF = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dpf
+USER    NEWDPF move	ligand.pdbqt
+USER    NEWDPF about	-0.096000 -0.217000 -0.029000
+USER    NEWDPF tran0	5.373953 16.402361 68.057445
+USER    NEWDPF axisangle0	0.821745 -0.393990 0.411711 77.040016
+USER    NEWDPF quaternion0	0.511773 -0.245372 0.256409 0.782391
+USER    NEWDPF dihe0	3.58 -174.24 10.19 -151.26 -19.89 87.37 -8.59 -39.56 -140.65 83.51 161.79 
+USER  
+USER                              x       y       z    vdW   Elec        q     RMS 
+ATOM      1  C   LIG    1        5.125  18.628  67.256 -0.20 +0.26    +0.131    69.224
+ATOM      2  C   LIG    1        5.128  18.738  65.866 -0.18 +0.24    +0.092    69.224
+ATOM      3  C   LIG    1        5.796  17.790  65.089 -0.33 +0.27    +0.135    69.224
+ATOM      4  C   LIG    1        6.459  16.731  65.714 -0.25 +0.19    +0.105    69.224
+ATOM      5  C   LIG    1        7.172  15.717  64.922 -0.28 +0.35    +0.197    69.224
+ATOM      6  C   LIG    1        7.836  14.641  65.686 -0.35 +0.20    +0.098    69.224
+ATOM      7  C   LIG    1        7.756  14.640  67.026 -0.24 +0.28    +0.139    69.224
+ATOM      8  O   LIG    1        7.090  15.601  67.770 +0.06 -0.90    -0.454    69.224
+ATOM      9  O   LIG    1        7.218  15.755  63.700 -0.23 -0.43    -0.287    69.224
+ATOM     10  C   LIG    1        6.455  16.619  67.104 -0.03 +0.26    +0.146    69.224
+ATOM     11  C   LIG    1        5.788  17.569  67.877 -0.00 +0.16    +0.093    69.224
+ATOM     12  C   LIG    1        8.407  13.595  67.842 -0.34 +0.04    +0.021    69.224
+ATOM     13  C   LIG    1        9.800  13.542  67.932 -0.34 +0.02    +0.015    69.224
+ATOM     14  C   LIG    1       10.415  12.554  68.702 -0.35 +0.05    +0.050    69.224
+ATOM     15  C   LIG    1        9.638  11.618  69.384 -0.21 +0.11    +0.158    69.224
+ATOM     16  C   LIG    1        8.247  11.668  69.295 -0.11 +0.11    +0.159    69.224
+ATOM     17  C   LIG    1        7.632  12.655  68.526 -0.22 +0.08    +0.060    69.224
+ATOM     18  O   LIG    1        7.479  10.758  69.959 -0.04 -0.26    -0.503    69.224
+ATOM     19  H   LIG    1        8.066  10.188  70.485 +0.06 +0.13    +0.292    69.224
+ATOM     20  O   LIG    1       10.251  10.658  70.132 -0.11 -0.27    -0.503    69.224
+ATOM     21  H   LIG    1        9.579  10.036  70.462 +0.07 +0.13    +0.292    69.224
+ATOM     22  O   LIG    1        5.770  17.942  63.736 -0.23 -1.00    -0.506    69.224
+ATOM     23  H   LIG    1        6.119  17.152  63.297 -0.34 +0.39    +0.292    69.224
+ATOM     24  O   LIG    1        4.471  19.558  68.011 -0.11 -0.90    -0.461    69.224
+ATOM     25  O   LIG    1        6.060  21.028  67.142 -0.25 -0.76    -0.331    69.224
+ATOM     26  C   LIG    1        5.137  20.805  68.204 -0.15 +0.65    +0.339    69.224
+ATOM     27  C   LIG    1        5.869  20.744  69.546 -0.15 +0.31    +0.214    69.224
+ATOM     28  C   LIG    1        6.734  21.986  69.764 -0.24 +0.24    +0.180    69.224
+ATOM     29  C   LIG    1        7.594  22.285  68.537 -0.29 +0.26    +0.177    69.224
+ATOM     30  C   LIG    1        6.745  22.277  67.263 -0.47 +0.36    +0.179    69.224
+ATOM     31  O   LIG    1        8.204  23.564  68.688 -0.81 -0.49    -0.386    69.224
+ATOM     32  H   LIG    1        9.076  23.533  68.258 -0.33 +0.23    +0.210    69.224
+ATOM     33  O   LIG    1        7.607  21.768  70.874 -0.23 -0.42    -0.386    69.224
+ATOM     34  H   LIG    1        8.345  22.395  70.790 +0.03 +0.24    +0.210    69.224
+ATOM     35  O   LIG    1        4.894  20.657  70.584 -0.02 -0.48    -0.383    69.224
+ATOM     36  H   LIG    1        4.094  20.245  70.214 +0.05 +0.28    +0.210    69.224
+ATOM     37  C   LIG    1        7.600  22.456  66.013 -0.42 +0.36    +0.190    69.224
+ATOM     38  O   LIG    1        7.105  21.599  65.001 -0.79 -1.03    -0.392    69.224
+ATOM     39  H   LIG    1        7.260  20.682  65.288 -0.01 +0.45    +0.210    69.224
+TER
+ENDMDL
+MODEL       10
+USER    Run = 10
+USER    Cluster Rank = 2
+USER    Number of conformations in this cluster = 4
+USER  
+USER    RMSD from reference structure       = 69.093 A
+USER  
+USER    Estimated Free Energy of Binding    =   -5.37 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =  115.54 uM (micromolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =   -8.65 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -7.80 kcal/mol
+USER        Electrostatic Energy            =   -0.85 kcal/mol
+USER    (2) Final Total Internal Energy     =   -4.32 kcal/mol
+USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -4.32 kcal/mol
+USER    
+USER    
+USER  
+USER    DPF = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dpf
+USER    NEWDPF move	ligand.pdbqt
+USER    NEWDPF about	-0.096000 -0.217000 -0.029000
+USER    NEWDPF tran0	2.781623 20.921514 67.344220
+USER    NEWDPF axisangle0	0.483144 0.104930 -0.869231 -55.749066
+USER    NEWDPF quaternion0	0.225888 0.049059 -0.406397 -0.883974
+USER    NEWDPF dihe0	-1.14 -164.97 -25.24 87.74 142.37 -103.93 72.62 -61.21 143.27 137.55 -30.43 
+USER  
+USER                              x       y       z    vdW   Elec        q     RMS 
+ATOM      1  C   LIG    1        2.745  22.366  69.233 -0.11 +0.19    +0.131    69.093
+ATOM      2  C   LIG    1        3.835  23.233  69.310 -0.09 +0.13    +0.092    69.093
+ATOM      3  C   LIG    1        5.053  22.882  68.726 -0.14 +0.22    +0.135    69.093
+ATOM      4  C   LIG    1        5.173  21.658  68.065 -0.27 +0.21    +0.105    69.093
+ATOM      5  C   LIG    1        6.443  21.259  67.442 -0.31 +0.40    +0.197    69.093
+ATOM      6  C   LIG    1        6.456  19.945  66.769 -0.32 +0.21    +0.098    69.093
+ATOM      7  C   LIG    1        5.339  19.201  66.756 -0.22 +0.33    +0.139    69.093
+ATOM      8  O   LIG    1        4.144  19.576  67.352 -0.45 -1.08    -0.454    69.093
+ATOM      9  O   LIG    1        7.438  21.970  67.475 -0.41 -0.48    -0.287    69.093
+ATOM     10  C   LIG    1        4.083  20.790  67.987 -0.19 +0.31    +0.146    69.093
+ATOM     11  C   LIG    1        2.868  21.143  68.572 -0.16 +0.17    +0.093    69.093
+ATOM     12  C   LIG    1        5.295  17.875  66.106 -0.32 +0.04    +0.021    69.093
+ATOM     13  C   LIG    1        6.387  17.422  65.363 -0.36 +0.03    +0.015    69.093
+ATOM     14  C   LIG    1        6.345  16.171  64.748 -0.36 +0.09    +0.050    69.093
+ATOM     15  C   LIG    1        5.211  15.369  64.876 -0.25 +0.34    +0.158    69.093
+ATOM     16  C   LIG    1        4.118  15.819  65.617 -0.29 +0.30    +0.159    69.093
+ATOM     17  C   LIG    1        4.160  17.070  66.232 -0.24 +0.11    +0.060    69.093
+ATOM     18  O   LIG    1        3.006  15.043  65.750 -0.12 -0.78    -0.503    69.093
+ATOM     19  H   LIG    1        3.144  14.222  65.247 -0.30 +0.43    +0.292    69.093
+ATOM     20  O   LIG    1        5.181  14.149  64.270 -0.51 -1.38    -0.503    69.093
+ATOM     21  H   LIG    1        4.263  13.828  64.248 -0.42 +0.58    +0.292    69.093
+ATOM     22  O   LIG    1        6.087  23.764  68.829 +0.00 -0.81    -0.506    69.093
+ATOM     23  H   LIG    1        6.936  23.302  68.762 +0.17 +0.43    +0.292    69.093
+ATOM     24  O   LIG    1        1.557  22.714  69.806 +0.00 -0.59    -0.461    69.093
+ATOM     25  O   LIG    1       -0.020  22.544  68.094 -0.07 -0.57    -0.331    69.093
+ATOM     26  C   LIG    1        0.641  23.438  68.986 -0.03 +0.45    +0.339    69.093
+ATOM     27  C   LIG    1        1.436  24.484  68.204 +0.02 +0.25    +0.214    69.093
+ATOM     28  C   LIG    1        0.554  25.207  67.186 -0.14 +0.22    +0.180    69.093
+ATOM     29  C   LIG    1       -0.261  24.215  66.356 -0.21 +0.29    +0.177    69.093
+ATOM     30  C   LIG    1       -0.972  23.205  67.260 -0.14 +0.32    +0.179    69.093
+ATOM     31  O   LIG    1       -1.230  24.926  65.589 -0.12 -0.55    -0.386    69.093
+ATOM     32  H   LIG    1       -0.897  25.829  65.448 +0.09 +0.27    +0.210    69.093
+ATOM     33  O   LIG    1        1.376  25.961  66.294 -0.15 -0.44    -0.386    69.093
+ATOM     34  H   LIG    1        2.102  26.341  66.819 -0.51 +0.16    +0.210    69.093
+ATOM     35  O   LIG    1        1.963  25.432  69.132 +0.06 -0.36    -0.383    69.093
+ATOM     36  H   LIG    1        2.254  26.214  68.631 -0.30 +0.15    +0.210    69.093
+ATOM     37  C   LIG    1       -1.696  22.135  66.449 -0.12 +0.54    +0.190    69.093
+ATOM     38  O   LIG    1       -1.135  20.874  66.766 -0.58 -1.50    -0.392    69.093
+ATOM     39  H   LIG    1       -0.605  20.981  67.575 +0.05 +0.54    +0.210    69.093
+TER
+ENDMDL
+MODEL        8
+USER    Run = 8
+USER    Cluster Rank = 3
+USER    Number of conformations in this cluster = 1
+USER  
+USER    RMSD from reference structure       = 70.235 A
+USER  
+USER    Estimated Free Energy of Binding    =   -4.20 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =  831.04 uM (micromolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =   -7.48 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -7.21 kcal/mol
+USER        Electrostatic Energy            =   -0.28 kcal/mol
+USER    (2) Final Total Internal Energy     =   -4.90 kcal/mol
+USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -4.90 kcal/mol
+USER    
+USER    
+USER  
+USER    DPF = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dpf
+USER    NEWDPF move	ligand.pdbqt
+USER    NEWDPF about	-0.096000 -0.217000 -0.029000
+USER    NEWDPF tran0	4.788228 20.721201 68.498443
+USER    NEWDPF axisangle0	-0.063416 -0.723277 0.687640 66.806725
+USER    NEWDPF quaternion0	-0.034913 -0.398186 0.378566 0.834816
+USER    NEWDPF dihe0	-4.23 179.89 20.71 -145.50 -26.50 88.17 34.46 124.24 -131.93 73.07 -18.91 
+USER  
+USER                              x       y       z    vdW   Elec        q     RMS 
+ATOM      1  C   LIG    1        5.823  22.319  69.924 -0.14 +0.17    +0.131    70.235
+ATOM      2  C   LIG    1        6.471  23.352  69.248 -0.25 +0.13    +0.092    70.235
+ATOM      3  C   LIG    1        6.967  23.145  67.960 -0.37 +0.22    +0.135    70.235
+ATOM      4  C   LIG    1        6.810  21.897  67.354 -0.45 +0.20    +0.105    70.235
+ATOM      5  C   LIG    1        7.323  21.647  65.999 -0.38 +0.42    +0.197    70.235
+ATOM      6  C   LIG    1        7.099  20.292  65.455 -0.34 +0.21    +0.098    70.235
+ATOM      7  C   LIG    1        6.455  19.382  66.202 -0.30 +0.30    +0.139    70.235
+ATOM      8  O   LIG    1        5.979  19.617  67.483 -0.11 -0.90    -0.454    70.235
+ATOM      9  O   LIG    1        7.904  22.507  65.351 -0.54 -0.50    -0.287    70.235
+ATOM     10  C   LIG    1        6.161  20.863  68.029 -0.25 +0.27    +0.146    70.235
+ATOM     11  C   LIG    1        5.667  21.072  69.316 -0.17 +0.14    +0.093    70.235
+ATOM     12  C   LIG    1        6.210  18.009  65.714 -0.36 +0.04    +0.021    70.235
+ATOM     13  C   LIG    1        7.239  17.065  65.733 -0.34 +0.03    +0.015    70.235
+ATOM     14  C   LIG    1        7.008  15.769  65.272 -0.36 +0.09    +0.050    70.235
+ATOM     15  C   LIG    1        5.748  15.414  64.791 -0.28 +0.33    +0.158    70.235
+ATOM     16  C   LIG    1        4.719  16.355  64.770 -0.34 +0.30    +0.159    70.235
+ATOM     17  C   LIG    1        4.949  17.651  65.231 -0.39 +0.13    +0.060    70.235
+ATOM     18  O   LIG    1        3.483  16.018  64.304 -0.21 -0.86    -0.503    70.235
+ATOM     19  H   LIG    1        3.522  15.108  63.965 -0.14 +0.43    +0.292    70.235
+ATOM     20  O   LIG    1        5.535  14.145  64.342 -0.60 -1.51    -0.503    70.235
+ATOM     21  H   LIG    1        4.612  14.064  64.045 -0.38 +0.65    +0.292    70.235
+ATOM     22  O   LIG    1        7.593  24.186  67.343 -0.15 -0.69    -0.506    70.235
+ATOM     23  H   LIG    1        7.602  24.057  66.383 -0.23 +0.40    +0.292    70.235
+ATOM     24  O   LIG    1        5.341  22.527  71.183 +0.01 -0.52    -0.461    70.235
+ATOM     25  O   LIG    1        3.289  22.416  70.078 -0.03 -0.42    -0.331    70.235
+ATOM     26  C   LIG    1        3.938  22.764  71.298 -0.00 +0.37    +0.339    70.235
+ATOM     27  C   LIG    1        3.737  24.248  71.608 -0.03 +0.22    +0.214    70.235
+ATOM     28  C   LIG    1        2.255  24.622  71.599 -0.02 +0.18    +0.180    70.235
+ATOM     29  C   LIG    1        1.557  24.090  70.347 -0.04 +0.19    +0.177    70.235
+ATOM     30  C   LIG    1        1.874  22.608  70.136 -0.04 +0.22    +0.179    70.235
+ATOM     31  O   LIG    1        0.148  24.256  70.486 +0.00 -0.41    -0.386    70.235
+ATOM     32  H   LIG    1       -0.233  24.340  69.595 +0.03 +0.23    +0.210    70.235
+ATOM     33  O   LIG    1        2.123  26.045  71.609 -0.01 -0.37    -0.386    70.235
+ATOM     34  H   LIG    1        1.279  26.261  71.177 +0.01 +0.20    +0.210    70.235
+ATOM     35  O   LIG    1        4.285  24.515  72.898 +0.00 -0.36    -0.383    70.235
+ATOM     36  H   LIG    1        4.994  23.870  73.064 +0.02 +0.19    +0.210    70.235
+ATOM     37  C   LIG    1        1.285  22.085  68.830 -0.10 +0.30    +0.190    70.235
+ATOM     38  O   LIG    1       -0.110  22.329  68.835 -0.01 -0.60    -0.392    70.235
+ATOM     39  H   LIG    1       -0.393  22.408  69.763 +0.03 +0.27    +0.210    70.235
+TER
+ENDMDL
+MODEL        1
+USER    Run = 1
+USER    Cluster Rank = 4
+USER    Number of conformations in this cluster = 2
+USER  
+USER    RMSD from reference structure       = 69.101 A
+USER  
+USER    Estimated Free Energy of Binding    =   -4.12 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =  957.49 uM (micromolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =   -7.40 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -6.92 kcal/mol
+USER        Electrostatic Energy            =   -0.48 kcal/mol
+USER    (2) Final Total Internal Energy     =   -4.69 kcal/mol
+USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -4.69 kcal/mol
+USER    
+USER    
+USER  
+USER    DPF = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dpf
+USER    NEWDPF move	ligand.pdbqt
+USER    NEWDPF about	-0.096000 -0.217000 -0.029000
+USER    NEWDPF tran0	6.689855 16.947587 67.386218
+USER    NEWDPF axisangle0	-0.113285 -0.961254 0.251311 -138.674740
+USER    NEWDPF quaternion0	-0.105998 -0.899421 0.235145 -0.352865
+USER    NEWDPF dihe0	-3.92 171.37 45.56 -55.21 -24.94 87.45 -11.29 166.24 51.08 123.47 -8.53 
+USER  
+USER                              x       y       z    vdW   Elec        q     RMS 
+ATOM      1  C   LIG    1        7.126  17.306  65.076 -0.32 +0.22    +0.131    69.101
+ATOM      2  C   LIG    1        7.372  18.638  64.741 -0.37 +0.16    +0.092    69.101
+ATOM      3  C   LIG    1        6.833  19.667  65.516 -0.32 +0.30    +0.135    69.101
+ATOM      4  C   LIG    1        6.047  19.353  66.627 -0.28 +0.23    +0.105    69.101
+ATOM      5  C   LIG    1        5.464  20.415  67.461 -0.19 +0.44    +0.197    69.101
+ATOM      6  C   LIG    1        4.651  19.970  68.611 -0.16 +0.17    +0.098    69.101
+ATOM      7  C   LIG    1        4.492  18.656  68.834 -0.11 +0.22    +0.139    69.101
+ATOM      8  O   LIG    1        5.036  17.657  68.041 -0.04 -0.77    -0.454    69.101
+ATOM      9  O   LIG    1        5.637  21.602  67.222 -0.32 -0.71    -0.287    69.101
+ATOM     10  C   LIG    1        5.801  18.022  66.962 -0.18 +0.27    +0.146    69.101
+ATOM     11  C   LIG    1        6.340  16.997  66.187 -0.22 +0.17    +0.093    69.101
+ATOM     12  C   LIG    1        3.683  18.152  69.963 -0.07 +0.03    +0.021    69.101
+ATOM     13  C   LIG    1        4.307  17.737  71.141 -0.06 +0.02    +0.015    69.101
+ATOM     14  C   LIG    1        3.543  17.260  72.207 -0.02 +0.05    +0.050    69.101
+ATOM     15  C   LIG    1        2.154  17.198  72.097 -0.01 +0.16    +0.158    69.101
+ATOM     16  C   LIG    1        1.529  17.611  70.920 -0.01 +0.18    +0.159    69.101
+ATOM     17  C   LIG    1        2.292  18.088  69.855 -0.06 +0.08    +0.060    69.101
+ATOM     18  O   LIG    1        0.172  17.555  70.803 +0.01 -0.57    -0.503    69.101
+ATOM     19  H   LIG    1       -0.188  17.144  71.607 +0.01 +0.29    +0.292    69.101
+ATOM     20  O   LIG    1        1.419  16.729  73.144 +0.00 -0.45    -0.503    69.101
+ATOM     21  H   LIG    1        0.476  16.877  72.961 +0.00 +0.26    +0.292    69.101
+ATOM     22  O   LIG    1        7.102  20.950  65.147 -0.44 -1.21    -0.506    69.101
+ATOM     23  H   LIG    1        7.358  21.479  65.917 +0.21 +0.61    +0.292    69.101
+ATOM     24  O   LIG    1        7.654  16.305  64.316 -0.16 -0.70    -0.461    69.101
+ATOM     25  O   LIG    1        8.131  14.800  66.033 -0.22 -0.60    -0.331    69.101
+ATOM     26  C   LIG    1        8.673  15.511  64.924 -0.26 +0.51    +0.339    69.101
+ATOM     27  C   LIG    1        9.789  16.451  65.382 -0.47 +0.28    +0.214    69.101
+ATOM     28  C   LIG    1       10.855  15.700  66.181 -0.52 +0.22    +0.180    69.101
+ATOM     29  C   LIG    1       10.222  14.821  67.260 -0.37 +0.28    +0.177    69.101
+ATOM     30  C   LIG    1        9.098  13.964  66.673 -0.38 +0.26    +0.179    69.101
+ATOM     31  O   LIG    1       11.219  13.972  67.821 -0.32 -0.44    -0.386    69.101
+ATOM     32  H   LIG    1       10.970  13.051  67.631 -0.35 +0.14    +0.210    69.101
+ATOM     33  O   LIG    1       11.717  16.639  66.824 -0.16 -0.48    -0.386    69.101
+ATOM     34  H   LIG    1       12.090  16.201  67.609 +0.16 +0.26    +0.210    69.101
+ATOM     35  O   LIG    1       10.387  17.034  64.225 -0.33 -0.45    -0.383    69.101
+ATOM     36  H   LIG    1        9.722  17.047  63.516 +0.17 +0.25    +0.210    69.101
+ATOM     37  C   LIG    1        8.374  13.166  67.753 -0.31 +0.29    +0.190    69.101
+ATOM     38  O   LIG    1        9.155  13.195  68.933 -0.55 -0.71    -0.392    69.101
+ATOM     39  H   LIG    1        9.955  12.665  68.772 +0.09 +0.26    +0.210    69.101
+TER
+ENDMDL
+MODEL        9
+USER    Run = 9
+USER    Cluster Rank = 5
+USER    Number of conformations in this cluster = 1
+USER  
+USER    RMSD from reference structure       = 67.357 A
+USER  
+USER    Estimated Free Energy of Binding    =   -3.56 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =    2.46 mM (millimolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =   -6.84 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -6.36 kcal/mol
+USER        Electrostatic Energy            =   -0.48 kcal/mol
+USER    (2) Final Total Internal Energy     =   -4.90 kcal/mol
+USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -4.90 kcal/mol
+USER    
+USER    
+USER  
+USER    DPF = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dpf
+USER    NEWDPF move	ligand.pdbqt
+USER    NEWDPF about	-0.096000 -0.217000 -0.029000
+USER    NEWDPF tran0	5.812857 14.486284 66.132283
+USER    NEWDPF axisangle0	0.021233 -0.994865 -0.098962 -174.447752
+USER    NEWDPF quaternion0	0.021209 -0.993697 -0.098846 -0.048434
+USER    NEWDPF dihe0	11.72 178.00 16.13 85.76 -12.31 87.45 81.70 -90.08 10.80 74.51 -26.75 
+USER  
+USER                              x       y       z    vdW   Elec        q     RMS 
+ATOM      1  C   LIG    1        7.191  16.213  65.252 -0.29 +0.22    +0.131    67.357
+ATOM      2  C   LIG    1        7.091  17.427  65.933 -0.28 +0.16    +0.092    67.357
+ATOM      3  C   LIG    1        5.918  17.753  66.615 -0.20 +0.25    +0.135    67.357
+ATOM      4  C   LIG    1        4.847  16.856  66.613 -0.19 +0.19    +0.105    67.357
+ATOM      5  C   LIG    1        3.598  17.172  67.322 -0.08 +0.34    +0.197    67.357
+ATOM      6  C   LIG    1        2.533  16.151  67.254 -0.09 +0.15    +0.098    67.357
+ATOM      7  C   LIG    1        2.752  15.016  66.570 -0.18 +0.21    +0.139    67.357
+ATOM      8  O   LIG    1        3.927  14.725  65.896 -0.12 -1.00    -0.454    67.357
+ATOM      9  O   LIG    1        3.441  18.219  67.935 -0.12 -0.51    -0.287    67.357
+ATOM     10  C   LIG    1        4.947  15.642  65.933 -0.23 +0.30    +0.146    67.357
+ATOM     11  C   LIG    1        6.119  15.319  65.251 -0.27 +0.21    +0.093    67.357
+ATOM     12  C   LIG    1        1.720  13.964  66.461 -0.18 +0.03    +0.021    67.357
+ATOM     13  C   LIG    1        2.079  12.618  66.559 -0.15 +0.02    +0.015    67.357
+ATOM     14  C   LIG    1        1.105  11.625  66.454 -0.11 +0.05    +0.050    67.357
+ATOM     15  C   LIG    1       -0.230  11.975  66.252 -0.07 +0.17    +0.158    67.357
+ATOM     16  C   LIG    1       -0.590  13.319  66.152 -0.11 +0.18    +0.159    67.357
+ATOM     17  C   LIG    1        0.383  14.312  66.257 -0.14 +0.07    +0.060    67.357
+ATOM     18  O   LIG    1       -1.892  13.672  65.956 -0.01 -0.62    -0.503    67.357
+ATOM     19  H   LIG    1       -2.446  12.885  66.094 +0.05 +0.32    +0.292    67.357
+ATOM     20  O   LIG    1       -1.171  10.996  66.150 +0.00 -0.48    -0.503    67.357
+ATOM     21  H   LIG    1       -2.046  11.407  66.043 +0.03 +0.28    +0.292    67.357
+ATOM     22  O   LIG    1        5.869  18.950  67.264 -0.07 -0.99    -0.506    67.357
+ATOM     23  H   LIG    1        5.138  18.964  67.899 +0.12 +0.54    +0.292    67.357
+ATOM     24  O   LIG    1        8.340  15.899  64.586 -0.16 -0.69    -0.461    67.357
+ATOM     25  O   LIG    1        8.707  14.568  66.466 -0.25 -0.55    -0.331    67.357
+ATOM     26  C   LIG    1        9.307  15.138  65.306 -0.26 +0.48    +0.339    67.357
+ATOM     27  C   LIG    1       10.447  16.078  65.699 -0.48 +0.27    +0.214    67.357
+ATOM     28  C   LIG    1       11.459  15.376  66.606 -0.40 +0.19    +0.180    67.357
+ATOM     29  C   LIG    1       10.761  14.641  67.750 -0.36 +0.29    +0.177    67.357
+ATOM     30  C   LIG    1        9.620  13.770  67.220 -0.26 +0.24    +0.179    67.357
+ATOM     31  O   LIG    1       11.707  13.819  68.429 -0.34 -0.43    -0.386    67.357
+ATOM     32  H   LIG    1       12.593  14.189  68.273 -0.35 +0.12    +0.210    67.357
+ATOM     33  O   LIG    1       12.341  16.346  67.174 -0.33 -0.41    -0.386    67.357
+ATOM     34  H   LIG    1       12.826  15.909  67.896 +0.08 +0.18    +0.210    67.357
+ATOM     35  O   LIG    1       11.101  16.513  64.507 -0.30 -0.44    -0.383    67.357
+ATOM     36  H   LIG    1       10.457  16.475  63.779 +0.16 +0.25    +0.210    67.357
+ATOM     37  C   LIG    1        8.835  13.118  68.354 -0.29 +0.29    +0.190    67.357
+ATOM     38  O   LIG    1        7.785  13.990  68.733 -0.22 -0.80    -0.392    67.357
+ATOM     39  H   LIG    1        7.591  14.566  67.974 +0.08 +0.43    +0.210    67.357
+TER
+ENDMDL
+
+
+AVSFLD: # AVS field file
+AVSFLD: #
+AVSFLD: # Created by AutoDock
+AVSFLD: #
+AVSFLD: ndim=2           # number of dimensions in the field
+AVSFLD: nspace=1         # number of physical coordinates
+AVSFLD: veclen=7         # vector size
+AVSFLD: dim1=39          # atoms
+AVSFLD: dim2=5           # conformations
+AVSFLD: data=Real       # data type (byte,integer,Real,double)
+AVSFLD: field=uniform    # field coordinate layout
+AVSFLD: label= x y z vdW Elec q RMS
+AVSFLD: variable 1 file = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dlg.pdb filetype = ascii offset = 5 stride = 12
+AVSFLD: variable 2 file = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dlg.pdb filetype = ascii offset = 6 stride = 12
+AVSFLD: variable 3 file = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dlg.pdb filetype = ascii offset = 7 stride = 12
+AVSFLD: variable 4 file = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dlg.pdb filetype = ascii offset = 8 stride = 12
+AVSFLD: variable 5 file = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dlg.pdb filetype = ascii offset = 9 stride = 12
+AVSFLD: variable 6 file = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dlg.pdb filetype = ascii offset = 10 stride = 12
+AVSFLD: variable 7 file = B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/1.dlg.pdb filetype = ascii offset = 11 stride = 12
+AVSFLD: # end of file
+
+>>> Closing the docking parameter file (DPF)...
+This docking finished at:			8:26 47" p.m., 06/19/2022
+
+
+________________________________________________________________________________
+
+B:/Documents/github/bioinformatics/autodock4/data/task/a-glyukoza/03_cynoroside/autodock4.exe: Successful Completion on "ACER"
+
+Real= 9m 27.43s,  CPU= 2m 04.06s,  System= 0.95s
+________________________________________________________________________________
+
